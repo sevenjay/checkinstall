@@ -12,623 +12,623 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.6.0beta2\n"
 "POT-Creation-Date: 2003-3-19 00:58-0600\n"
-"PO-Revision-Date:  2003-3-19 00:58-0600\n"
+"PO-Revision-Date:  2009-12-07 17:00:02+0100\n"
 "Last-Translator: Hao Xin Kui <xinkuihao@yahoo.com>\n"
 "Language-Team: ES <izto@asic-linux.com.mx>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=gb2312\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "           This software is released under the GNU GPL."
-msgstr "±¾Èí¼şÒÔ GNU GPL °æÈ¨Ğ­Òé°ä²¼"
+msgstr "æœ¬è½¯ä»¶ä»¥ GNU GPL ç‰ˆæƒåè®®é¢å¸ƒ"
 
 msgid "Usage: checkinstall [options] [command [command arguments]]"
-msgstr "ÓÃ·¨£ºcheckinstall [²ÎÊı] [ÃüÁî [ÃüÁîµÄ²ÎÊı]]"
+msgstr "ç”¨æ³•ï¼šcheckinstall [å‚æ•°] [å‘½ä»¤ [å‘½ä»¤çš„å‚æ•°]]"
 
 msgid "Options:"
-msgstr "²ÎÊı£º"
+msgstr "å‚æ•°ï¼š"
 
 msgid "*Package type selection*"
-msgstr "*Ñ¡Ôñ´ò°ü¸ñÊ½*"
+msgstr "*é€‰æ‹©æ‰“åŒ…æ ¼å¼*"
 
 msgid "-t,--type=<slackware|rpm|debian> Choose packaging system"
-msgstr "-t,--type=<slackware|rpm|debian> Ñ¡Ôñ´ò°üÏµÍ³"
+msgstr "-t,--type=<slackware|rpm|debian> é€‰æ‹©æ‰“åŒ…ç³»ç»Ÿ"
 
 msgid "-S                               Build a Slackware package"
-msgstr "-S                             ´´½¨Ò»¸ö Slackware °ü"
+msgstr "-S                             åˆ›å»ºä¸€ä¸ª Slackware åŒ…"
 
 msgid "-R                               Build a RPM package"
-msgstr "-R                             ´´½¨Ò»¸ö RPM °ü"
+msgstr "-R                             åˆ›å»ºä¸€ä¸ª RPM åŒ…"
 
 msgid "-D                               Build a Debian package"
-msgstr "-D                             ´´½¨Ò»¸ö Debian °ü"
+msgstr "-D                             åˆ›å»ºä¸€ä¸ª Debian åŒ…"
 
 msgid "*Install options*"
-msgstr "*°²×°²ÎÊı*"
+msgstr "*å®‰è£…å‚æ•°*"
 
 msgid "--install=<yes|no>             Toggle created package installation"
-msgstr "--install=<yes|no>             ÇĞ»»´´½¨°üºóÊÇ·ñ×Ô¶¯°²×°"
+msgstr "--install=<yes|no>             åˆ‡æ¢åˆ›å»ºåŒ…åæ˜¯å¦è‡ªåŠ¨å®‰è£…"
 
 msgid "*Scripting options*"
-msgstr "*½Å±¾²ÎÊı*"
+msgstr "*è„šæœ¬å‚æ•°*"
 
 msgid "-y, --default                  Accept default answers to all questions"
-msgstr "-y, --default                  ËùÓĞÎÊÌâ¾ù½ÓÊÜÈ±Ê¡´ğ°¸"
+msgstr "-y, --default                  æ‰€æœ‰é—®é¢˜å‡æ¥å—ç¼ºçœç­”æ¡ˆ"
 
 msgid "--pkgname=<name>               Set name"
-msgstr "--pkgname=<name>               ÉèÖÃÃû³Æ"
+msgstr "--pkgname=<name>               è®¾ç½®åç§°"
 
 msgid "--pkgversion=<version>         Set version"
-msgstr "--pkgversion=<version>         ÉèÖÃ°æ±¾ºÅ"
+msgstr "--pkgversion=<version>         è®¾ç½®ç‰ˆæœ¬å·"
 
 msgid "-A, --arch, --pkgarch=<arch>   Set architecture"
-msgstr "-A, --arch, --pkgarch=<arch>   ÉèÖÃÊ¹ÓÃÆ½Ì¨"
+msgstr "-A, --arch, --pkgarch=<arch>   è®¾ç½®ä½¿ç”¨å¹³å°"
 
 msgid "--pkgrelease=<release>         Set release"
-msgstr "--pkgrelease=<release>         ÉèÖÃ·¢²¼ºÅ"
+msgstr "--pkgrelease=<release>         è®¾ç½®å‘å¸ƒå·"
 
 msgid "--pkglicense=<license>         Set license"
-msgstr "--pkglicense=<license>        ÉèÖÃ°æÈ¨Ğ­Òé"
+msgstr "--pkglicense=<license>        è®¾ç½®ç‰ˆæƒåè®®"
 
 msgid "--pkggroup=<group>             Set software group"
-msgstr "--pkggroup=<×éÃû>             ÉèÖÃÈí¼ş×é±ğ"
+msgstr "--pkggroup=<ç»„å>             è®¾ç½®è½¯ä»¶ç»„åˆ«"
 
 msgid "--pkgsource=<source>           Set source location"
-msgstr "--pkgsource=<source>          ÉèÖÃÔ´ÂëÎ»ÖÃ"
+msgstr "--pkgsource=<source>          è®¾ç½®æºç ä½ç½®"
 
 msgid "--pkgaltsource=<altsource>     Set alternate source location"
-msgstr "--pkgaltsource=<altsource>    ÉèÖÃÌæ»»Ô´ÂëÎ»ÖÃ"
+msgstr "--pkgaltsource=<altsource>    è®¾ç½®æ›¿æ¢æºç ä½ç½®"
 
 msgid "--pakdir=<directory>           The new package will be saved here"
-msgstr "--pakdir=<Ä¿Â¼>               ĞÂ°ü½«±£´æÔÚÕâÀï"
+msgstr "--pakdir=<ç›®å½•>               æ–°åŒ…å°†ä¿å­˜åœ¨è¿™é‡Œ"
 
 msgid "--maintainer=<email addr>      The package maintainer (.deb)"
-msgstr "--maintainer=<email µØÖ·>     Èí¼ş°üµÄÎ¬»¤Õß (.deb)"
+msgstr "--maintainer=<email åœ°å€>     è½¯ä»¶åŒ…çš„ç»´æŠ¤è€… (.deb)"
 
 msgid "--provides=<list>              Features provided by this package (.rpm)"
-msgstr "--provides=<list>             Õâ¸ö°üÌá¹©µÄÌØĞÔ (.rpm)"
+msgstr "--provides=<list>             è¿™ä¸ªåŒ…æä¾›çš„ç‰¹æ€§ (.rpm)"
 
 msgid "--requires=<list>              Features required by this package (.rpm)"
-msgstr "--requires=<list>             Õâ¸ö°üÒªÇóµÄÌØĞÔ (.rpm)"
+msgstr "--requires=<list>             è¿™ä¸ªåŒ…è¦æ±‚çš„ç‰¹æ€§ (.rpm)"
 
 msgid "--rpmflags=<flags>             Pass this flags to the rpm installer"
-msgstr "--rpmflags=<flags>            °Ñ²ÎÊı flags ´«µİ¸ø rpm °²×°³ÌĞò"
+msgstr "--rpmflags=<flags>            æŠŠå‚æ•° flags ä¼ é€’ç»™ rpm å®‰è£…ç¨‹åº"
 
 msgid "--dpkgflags=<flags>            Pass this flags to the dpkg installer"
-msgstr "--dpkgflags=<flags>           °Ñ²ÎÊı flags ´«µİ¸ø dpkg °²×°³ÌĞò"
+msgstr "--dpkgflags=<flags>           æŠŠå‚æ•° flags ä¼ é€’ç»™ dpkg å®‰è£…ç¨‹åº"
 
 msgid "--spec=<path>                  .spec file location"
-msgstr "--spec=<path>                 .spec ÎÄ¼şµÄÎ»ÖÃ"
+msgstr "--spec=<path>                 .spec æ–‡ä»¶çš„ä½ç½®"
 
 msgid "--nodoc                        Do not include documentation files"
-msgstr "--nodoc                       ²»Òª°üº¬ÎÄµµÎÄ¼ş"
+msgstr "--nodoc                       ä¸è¦åŒ…å«æ–‡æ¡£æ–‡ä»¶"
 
 msgid "*Info display options*"
-msgstr "*ĞÅÏ¢ÏÔÊ¾²ÎÊı*"
+msgstr "*ä¿¡æ¯æ˜¾ç¤ºå‚æ•°*"
 
 msgid "-d<0|1|2>                      Set debug level"
-msgstr "-d<0|1|2>                     ÉèÖÃµ÷ÊÔ¼¶±ğ"
+msgstr "-d<0|1|2>                     è®¾ç½®è°ƒè¯•çº§åˆ«"
 
 msgid "-si                            Run an interactive install command"
-msgstr "-si                           ÔËĞĞÒ»¸ö½»»¥µÄ°²×°ÃüÁî"
+msgstr "-si                           è¿è¡Œä¸€ä¸ªäº¤äº’çš„å®‰è£…å‘½ä»¤"
 
 msgid "--showinstall=<yes|no>         Toggle interactive install command"
-msgstr "--showinstall=<yes|no>        ÇĞ»»ÊÇ·ñ½»»¥°²×°"
+msgstr "--showinstall=<yes|no>        åˆ‡æ¢æ˜¯å¦äº¤äº’å®‰è£…"
 
 msgid ""
 "-ss                            Run an interactive Slackware installation "
 "script"
-msgstr "-ss                           ÔËĞĞ½»»¥µÄ Slackware °²×°½Å±¾"
+msgstr "-ss                           è¿è¡Œäº¤äº’çš„ Slackware å®‰è£…è„šæœ¬"
 
 msgid ""
 "--showslack=<yes|no>           Toggle interactive Slackware installation "
 "script"
-msgstr "--showslack=<yes|no>          ÇĞ»»ÊÇ·ñÊ¹ÓÃ½»»¥µÄ Slackware °²×°½Å±¾"
+msgstr "--showslack=<yes|no>          åˆ‡æ¢æ˜¯å¦ä½¿ç”¨äº¤äº’çš„ Slackware å®‰è£…è„šæœ¬"
 
 msgid "*Package tuning options*"
-msgstr "*´ò°ü²ÎÊıµ÷Õû*"
+msgstr "*æ‰“åŒ…å‚æ•°è°ƒæ•´*"
 
 msgid ""
 "--autodoinst=<yes|no>          Toggle the creation of a doinst.sh script"
 msgstr ""
-"--autodoinst=<yes|no>                ÇĞ»»ÊÇ·ñ´´½¨ doinst.sh ½Å±¾"
+"--autodoinst=<yes|no>                åˆ‡æ¢æ˜¯å¦åˆ›å»º doinst.sh è„šæœ¬"
 
 msgid ""
 "--strip=<yes|no>               Strip any ELF binaries found inside the "
 "package"
-msgstr "--strip=<yes|no>              Strip °üÖĞµÄËùÓĞ ELF ¶ş½øÖÆÎÄ¼ş"
+msgstr "--strip=<yes|no>              Strip åŒ…ä¸­çš„æ‰€æœ‰ ELF äºŒè¿›åˆ¶æ–‡ä»¶"
 
 msgid ""
 "--stripso=<yes|no>             Strip any ELF binary libraries (.so files)"
-msgstr "--stripso=<yes|no>            Strip ËùÓĞ ELF ¶ş½øÖÆ¿âÎÄ¼ş (.so ÎÄ¼ş)"
+msgstr "--stripso=<yes|no>            Strip æ‰€æœ‰ ELF äºŒè¿›åˆ¶åº“æ–‡ä»¶ (.so æ–‡ä»¶)"
 
 msgid ""
 "--gzman=<yes|no>               Compress any man pages found inside the "
 "package"
-msgstr "--gzman=<yes|no>              ´ò°üÊ±Ñ¹ËõËùÓĞµÄ man ÊÖ²áÒ³"
+msgstr "--gzman=<yes|no>              æ‰“åŒ…æ—¶å‹ç¼©æ‰€æœ‰çš„ man æ‰‹å†Œé¡µ"
 
 msgid "--docdir=<path>                Where to put documentation files"
-msgstr "--docdir=<path>               ½«ÎÄµµÎÄ¼ş·ÅÔÚÄÄÀï"
+msgstr "--docdir=<path>               å°†æ–‡æ¡£æ–‡ä»¶æ”¾åœ¨å“ªé‡Œ"
 
 msgid "--umask=<mask>                 Set the umask value"
-msgstr "--umask=<mask>                ÉèÖÃ umask Öµ"
+msgstr "--umask=<mask>                è®¾ç½® umask å€¼"
 
 msgid ""
 "--exclude=<file|dir[,...]>     Exclude these files/directories from the "
 "package"
-msgstr "--exclude=<file|dir[,...]>     °üÖĞ²»¼ÓÈëÏÂÁĞÎÄ¼ş/Ä¿Â¼"
+msgstr "--exclude=<file|dir[,...]>     åŒ…ä¸­ä¸åŠ å…¥ä¸‹åˆ—æ–‡ä»¶/ç›®å½•"
 
 msgid "--include=<listfile>           Force the inclusion in the package of the"
-msgstr "--include=<listfile>           ´ò°üÊ±Ç¿ÖÆ°üº¬ºóÃæµÄÎÄ¼ş"
+msgstr "--include=<listfile>           æ‰“åŒ…æ—¶å¼ºåˆ¶åŒ…å«åé¢çš„æ–‡ä»¶"
 
 msgid "--inspect                      Inspect the package's file list"
-msgstr "--inspect                      ¼àÊÓ°üµÄÎÄ¼şÁĞ±í"
+msgstr "--inspect                      ç›‘è§†åŒ…çš„æ–‡ä»¶åˆ—è¡¨"
 
 msgid ""
 "--review-spec                  Review the spec file before creating a .rpm"
-msgstr "--review-spec                  ÔÚ´´½¨ .rpm °üÇ°ÏÈ¼ì²é spec ÎÄ¼ş"
+msgstr "--review-spec                  åœ¨åˆ›å»º .rpm åŒ…å‰å…ˆæ£€æŸ¥ spec æ–‡ä»¶"
 
 msgid ""
 "--review-control               Review the control file before creating a .deb"
-msgstr "--review-control               ÔÚ´´½¨ .deb °üÇ°ÏÈ¼ì²é control ÎÄ¼ş"
+msgstr "--review-control               åœ¨åˆ›å»º .deb åŒ…å‰å…ˆæ£€æŸ¥ control æ–‡ä»¶"
 
 
 msgid ""
 "--newslack                     Use the new (8.1+) Slackware description "
 "format"
-msgstr "--newslack                     Ê¹ÓÃĞÂµÄ(8.1ÒÔÉÏ)Slackware ÃèÊö¸ñÊ½"
+msgstr "--newslack                     ä½¿ç”¨æ–°çš„(8.1ä»¥ä¸Š)Slackware æè¿°æ ¼å¼"
 
 msgid "                               (\"--newslack\" implies \"-S\")"
-msgstr "                              (\"--newslack\" ¾ÍÊÇ \"-S\")"
+msgstr "                              (\"--newslack\" å°±æ˜¯ \"-S\")"
 
 msgid "*Cleanup options*"
-msgstr "*Çå³ı²ÎÊı*"
+msgstr "*æ¸…é™¤å‚æ•°*"
 
 msgid "--deldoc=<yes|no>              Delete doc-pak upon termination"
-msgstr "--deldoc=<yes|no>              ÖĞ¶ÏÊ±É¾³ı doc-pak "
+msgstr "--deldoc=<yes|no>              ä¸­æ–­æ—¶åˆ é™¤ doc-pak "
 
 msgid "--deldesc=<yes|no>             Delete description-pak upon termination"
-msgstr "--deldesc=<yes|no>             ÖĞ¶ÏÊ±É¾³ı description-pak"
+msgstr "--deldesc=<yes|no>             ä¸­æ–­æ—¶åˆ é™¤ description-pak"
 
 msgid "--delspec=<yes|no>             Delete spec file upon termination"
-msgstr "--delspec=<yes|no>             ÖĞ¶ÏÊ±É¾³ı spec ÎÄ¼ş"
+msgstr "--delspec=<yes|no>             ä¸­æ–­æ—¶åˆ é™¤ spec æ–‡ä»¶"
 
 msgid "--bk                           Backup any overwritten files"
-msgstr "--bk                           ±¸·İËùÓĞ±»¸²¸ÇµÄÎÄ¼ş"
+msgstr "--bk                           å¤‡ä»½æ‰€æœ‰è¢«è¦†ç›–çš„æ–‡ä»¶"
 
 msgid "--backup=<yes|no>              Toggle backup"
-msgstr "--backup=<yes|no>              ÇĞ»»ÊÇ·ñ±¸·İ"
+msgstr "--backup=<yes|no>              åˆ‡æ¢æ˜¯å¦å¤‡ä»½"
 
 msgid "*About CheckInstall*"
-msgstr "*¹ØÓÚ CheckInstall*"
+msgstr "*å…³äº CheckInstall*"
 
 msgid "--help, -h                     Show this message"
-msgstr "--help, -h                     ÏÔÊ¾Õâ¸öÏûÏ¢"
+msgstr "--help, -h                     æ˜¾ç¤ºè¿™ä¸ªæ¶ˆæ¯"
 
 msgid "--copyright                    Show Copyright information"
-msgstr "--copyright                    ÏÔÊ¾°æÈ¨ĞÅÏ¢"
+msgstr "--copyright                    æ˜¾ç¤ºç‰ˆæƒä¿¡æ¯"
 
 msgid "--version                      Show version information"
-msgstr "--version                      ÏÔÊ¾°æ±¾ĞÅÏ¢"
+msgstr "--version                      æ˜¾ç¤ºç‰ˆæœ¬ä¿¡æ¯"
 
 msgid "Use --help or -h to get more information"
-msgstr "Ê¹ÓÃ --help »ò -h À´µÃµ½¸ü¶àĞÅÏ¢"
+msgstr "ä½¿ç”¨ --help æˆ– -h æ¥å¾—åˆ°æ›´å¤šä¿¡æ¯"
 
 msgid "is an invalid value for"
-msgstr "ÊÇ²»ÕıÈ·µÄÖµ£¬¶ÔÓÚ"
+msgstr "æ˜¯ä¸æ­£ç¡®çš„å€¼ï¼Œå¯¹äº"
 
 msgid "Restoring overwritten files from backup..."
-msgstr "´Ó±¸·İÖĞ»Ö¸´±»¸²¸ÇµÄÎÄ¼ş¡­¡­"
+msgstr "ä»å¤‡ä»½ä¸­æ¢å¤è¢«è¦†ç›–çš„æ–‡ä»¶â€¦â€¦"
 
 msgid "*** SIGINT received ***"
-msgstr "*** ÊÕµ½ SIGINT ĞÅºÅ ***"
+msgstr "*** æ”¶åˆ° SIGINT ä¿¡å· ***"
 
 msgid "Cleaning up..."
-msgstr "Çå³ı¡­¡­"
+msgstr "æ¸…é™¤â€¦â€¦"
 
 msgid "Bye."
-msgstr "ÔÙ¼û¡£"
+msgstr "å†è§ã€‚"
 
 msgid "The checkinstallrc file was not found at:"
-msgstr "ÔÚÏÂÁĞÎ»ÖÃÕÒ²»µ½ checkinstallrc ÎÄ¼ş£º"
+msgstr "åœ¨ä¸‹åˆ—ä½ç½®æ‰¾ä¸åˆ° checkinstallrc æ–‡ä»¶ï¼š"
 
 msgid "Assuming default values."
-msgstr "¼Ù¶¨ÊÇÈ±Ê¡Öµ¡£"
+msgstr "å‡å®šæ˜¯ç¼ºçœå€¼ã€‚"
 
 msgid "I can't find $INSTALLWATCH."
-msgstr "ÎÒÕÒ²»µ½ $INSTALLWATCH¡£"
+msgstr "æˆ‘æ‰¾ä¸åˆ° $INSTALLWATCHã€‚"
 
 msgid "I can't continue. Either install installwatch or"
-msgstr "ÎÒ²»ÄÜ¼ÌĞøÁË¡£ÄãÒªÃ´×°ÉÏ installwatch£¬ÒªÃ´"
+msgstr "æˆ‘ä¸èƒ½ç»§ç»­äº†ã€‚ä½ è¦ä¹ˆè£…ä¸Š installwatchï¼Œè¦ä¹ˆ"
 
 msgid "modify the INSTALLWATCH variable in this script,"
-msgstr "ĞŞ¸Ä±¾½Å±¾ÖĞµÄ INSTALLWATCH ±äÁ¿"
+msgstr "ä¿®æ”¹æœ¬è„šæœ¬ä¸­çš„ INSTALLWATCH å˜é‡"
 
 msgid "then run checkinstall again."
-msgstr "È»ºóÔÙÔËĞĞ checkinstall."
+msgstr "ç„¶åå†è¿è¡Œ checkinstall."
 
 msgid "My temp dir exists already."
-msgstr "ÎÒµÄÁÙÊ±Ä¿Â¼ÒÑ¾­´æÔÚÁË¡£"
+msgstr "æˆ‘çš„ä¸´æ—¶ç›®å½•å·²ç»å­˜åœ¨äº†ã€‚"
 
 msgid "This looks like a symlink attack!"
-msgstr "¿´ÉÏÈ¥ÏñÊÇ·ûºÅÁ´½Ó¹¥»÷£¡"
+msgstr "çœ‹ä¸Šå»åƒæ˜¯ç¬¦å·é“¾æ¥æ”»å‡»ï¼"
 
 msgid "*** Aborting"
-msgstr "*** ÍË³ö"
+msgstr "*** é€€å‡º"
 
 msgid "is an unacceptable value for the temp dir. Please"
-msgstr "¶ÔÁÙÊ±Ä¿Â¼À´ËµÊÇÒ»¸ö²»ÄÜ½ÓÊÜµÄÖµ¡£Çë"
+msgstr "å¯¹ä¸´æ—¶ç›®å½•æ¥è¯´æ˜¯ä¸€ä¸ªä¸èƒ½æ¥å—çš„å€¼ã€‚è¯·"
 
 msgid "edit the variable definition for"
-msgstr "±àÒë±äÁ¿¶¨Òå£¬Îª"
+msgstr "ç¼–è¯‘å˜é‡å®šä¹‰ï¼Œä¸º"
 
 msgid "and try again."
-msgstr "È»ºóÔÙÊÔÒ»´Î¡£"
+msgstr "ç„¶åå†è¯•ä¸€æ¬¡ã€‚"
 
 msgid "**** Failed to create temp dir!"
-msgstr "**** ´´½¨ÁÙÊ±Ä¿Â¼Ê§°Ü£¡"
+msgstr "**** åˆ›å»ºä¸´æ—¶ç›®å½•å¤±è´¥ï¼"
 
 msgid "**** Do you have write permission for ${BASE_TMP_DIR}?"
-msgstr "**** Äã¶Ô ${BASE_TMP_DIR} ÓĞĞ´È¨ÏŞÂğ£¿"
+msgstr "**** ä½ å¯¹ ${BASE_TMP_DIR} æœ‰å†™æƒé™å—ï¼Ÿ"
 
 msgid "The package documentation directory ./doc-pak does not exist."
-msgstr "Èí¼ş°üµÄÎÄµµÄ¿Â¼ ./doc-pak ²»´æÔÚ¡£"
+msgstr "è½¯ä»¶åŒ…çš„æ–‡æ¡£ç›®å½• ./doc-pak ä¸å­˜åœ¨ã€‚"
 
 msgid "Should I create a default set of package docs? "
-msgstr "ÎÒÊÇ²»ÊÇÓ¦¸Ã´´½¨Ò»Ì×È±Ê¡µÄÈí¼ş°üÎÄµµ£¿ "
+msgstr "æˆ‘æ˜¯ä¸æ˜¯åº”è¯¥åˆ›å»ºä¸€å¥—ç¼ºçœçš„è½¯ä»¶åŒ…æ–‡æ¡£ï¼Ÿ "
 
 msgid "Preparing package documentation..."
-msgstr "×¼±¸Èí¼ş°üµÄÎÄµµ¡­¡­"
+msgstr "å‡†å¤‡è½¯ä»¶åŒ…çš„æ–‡æ¡£â€¦â€¦"
 
 msgid "*** No known documentation files were found. The new package"
-msgstr "*** Ã»ÓĞ·¢ÏÖÒÑÖªµÄÎÄµµ¡£Õâ¸öĞÂ°ü"
+msgstr "*** æ²¡æœ‰å‘ç°å·²çŸ¥çš„æ–‡æ¡£ã€‚è¿™ä¸ªæ–°åŒ…"
 
 msgid "*** won't include a documentation directory."
-msgstr "*** ½«Ã»ÓĞÎÄµµÄ¿Â¼"
+msgstr "*** å°†æ²¡æœ‰æ–‡æ¡£ç›®å½•"
 
 msgid "Copying documentation directory..."
-msgstr "¿½±´ÎÄµµÄ¿Â¼¡­¡­"
+msgstr "æ‹·è´æ–‡æ¡£ç›®å½•â€¦â€¦"
 
 msgid "Installing with"
-msgstr "°²×°ÃüÁî"
+msgstr "å®‰è£…å‘½ä»¤"
 
 msgid ""
 "========================= Installation results ==========================="
-msgstr "=============================== °²×°½á¹û ================================="
+msgstr "=============================== å®‰è£…ç»“æœ ================================="
 
 msgid ""
 "======================== Installation successful =========================="
-msgstr "=============================== °²×°³É¹¦ ================================="
+msgstr "=============================== å®‰è£…æˆåŠŸ ================================="
 
 msgid "****  Installation failed. Aborting package creation."
-msgstr "**** °²×°Ê§°Ü¡£ÍË³ö´ò°ü¹ı³Ì¡£"
+msgstr "**** å®‰è£…å¤±è´¥ã€‚é€€å‡ºæ‰“åŒ…è¿‡ç¨‹ã€‚"
 
 msgid "Do you want to view the installation log file? "
-msgstr "ÄãĞè²»ĞèÒª¿´Ò»ÏÂ°²×°µÄÈÕÖ¾ÎÄ¼ş£¿"
+msgstr "ä½ éœ€ä¸éœ€è¦çœ‹ä¸€ä¸‹å®‰è£…çš„æ—¥å¿—æ–‡ä»¶ï¼Ÿ"
 
 msgid "Some of the files created by the installation are inside the build"
-msgstr "°²×°ÖĞ´´½¨µÄÒ»Ğ©ÎÄ¼şÏÖÔÚ·ÅÔÚ±àÒë"
+msgstr "å®‰è£…ä¸­åˆ›å»ºçš„ä¸€äº›æ–‡ä»¶ç°åœ¨æ”¾åœ¨ç¼–è¯‘"
 
 msgid "directory: `pwd`"
-msgstr "Ä¿Â¼£º`pwd`"
+msgstr "ç›®å½•ï¼š`pwd`"
 
 msgid "You probably don't want them to be included in the package,"
-msgstr "Äã¿ÉÄÜ²»ÏëËüÃÇÒ²°üº¬µ½×îºó´ò³ÉµÄ°üÖĞ£¬"
+msgstr "ä½ å¯èƒ½ä¸æƒ³å®ƒä»¬ä¹ŸåŒ…å«åˆ°æœ€åæ‰“æˆçš„åŒ…ä¸­ï¼Œ"
 
 msgid "especially if they are inside your home directory."
-msgstr "ÓÈÆäÊÇÈç¹ûËüÃÇÔÚÄãµÄ¼ÒÄ¿Â¼Àï¡£"
+msgstr "å°¤å…¶æ˜¯å¦‚æœå®ƒä»¬åœ¨ä½ çš„å®¶ç›®å½•é‡Œã€‚"
 
 msgid "Do you want me to list them? "
-msgstr "ÄãÏëÎÒ°ÑËüÃÇÁĞ³öÀ´Ã´£¿"
+msgstr "ä½ æƒ³æˆ‘æŠŠå®ƒä»¬åˆ—å‡ºæ¥ä¹ˆï¼Ÿ"
 
 msgid "Should I exclude them from the package? (Saying yes is a good idea) "
-msgstr "ÎÒÓ¦¸Ã°ÑËüÃÇÅÅ³ıÔÚ°üÍâÃ´£¿(»Ø´ğ yes ±È½ÏºÃ)"
+msgstr "æˆ‘åº”è¯¥æŠŠå®ƒä»¬æ’é™¤åœ¨åŒ…å¤–ä¹ˆï¼Ÿ(å›ç­” yes æ¯”è¾ƒå¥½)"
 
 msgid "You requested to review the list of files that will be"
-msgstr "ÄãÒªÇó¿´Ò»ÏÂÎÄ¼şÁĞ±í£¬ËüÃÇ½«±»"
+msgstr "ä½ è¦æ±‚çœ‹ä¸€ä¸‹æ–‡ä»¶åˆ—è¡¨ï¼Œå®ƒä»¬å°†è¢«"
 
 msgid "included in this package."
-msgstr "°üº¬ÔÚ°üÀï¡£"
+msgstr "åŒ…å«åœ¨åŒ…é‡Œã€‚"
 
 msgid "Now you'll have the chance to review and optionally modify it."
-msgstr "ÏÖÔÚÄãÓĞ»ú»á¼ì²éÒ»ÏÂ£¬²¢¿ÉÒÔĞŞ¸ÄËü¡£"
+msgstr "ç°åœ¨ä½ æœ‰æœºä¼šæ£€æŸ¥ä¸€ä¸‹ï¼Œå¹¶å¯ä»¥ä¿®æ”¹å®ƒã€‚"
 
 msgid "Now you'll have the chance to review and optionally modify this file."
-msgstr "ÏÖÔÚÄãÓĞ»ú»á¼ì²éÒ»ÏÂÕâ¸öÎÄ¼ş£¬²¢¿ÉÒÔĞŞ¸ÄËü¡£"
+msgstr "ç°åœ¨ä½ æœ‰æœºä¼šæ£€æŸ¥ä¸€ä¸‹è¿™ä¸ªæ–‡ä»¶ï¼Œå¹¶å¯ä»¥ä¿®æ”¹å®ƒã€‚"
 
 msgid "Press ENTER to continue."
-msgstr "°´»Ø³µ¼ü¼ÌĞø¡£"
+msgstr "æŒ‰å›è½¦é”®ç»§ç»­ã€‚"
 
 msgid "Copying files to the temporary directory..."
-msgstr "°ÑÎÄ¼ş¿½±´µ½ÁÙÊ±Ä¿Â¼¡­¡­"
+msgstr "æŠŠæ–‡ä»¶æ‹·è´åˆ°ä¸´æ—¶ç›®å½•â€¦â€¦"
 
 msgid "Striping ELF binaries and libraries..."
-msgstr "Striping ELF ¶ş½øÖÆÎÄ¼şºÍ¿âÎÄ¼ş¡­¡­"
+msgstr "Striping ELF äºŒè¿›åˆ¶æ–‡ä»¶å’Œåº“æ–‡ä»¶â€¦â€¦"
 
 msgid "Striping ELF binaries..."
-msgstr "Striping ELF ¶ş½øÖÆÎÄ¼ş¡­¡­"
+msgstr "Striping ELF äºŒè¿›åˆ¶æ–‡ä»¶â€¦â€¦"
 
 msgid "Compressing man pages..."
-msgstr "Ñ¹Ëõ man ÊÖ²áÒ³¡­¡­"
+msgstr "å‹ç¼© man æ‰‹å†Œé¡µâ€¦â€¦"
 
 msgid "Building file list..."
-msgstr "´´½¨ÎÄ¼şÁĞ±í¡­¡­"
+msgstr "åˆ›å»ºæ–‡ä»¶åˆ—è¡¨â€¦â€¦"
 
 msgid "Please choose the packaging method you want to use."
-msgstr "ÇëÑ¡ÔñÄãÏëÊ¹ÓÃµÄ´ò°ü·½Ê½¡£"
+msgstr "è¯·é€‰æ‹©ä½ æƒ³ä½¿ç”¨çš„æ‰“åŒ…æ–¹å¼ã€‚"
 
 msgid "Slackware [S], RPM [R] or Debian [D]? "
-msgstr "Slackware [S], RPM [R] »¹ÊÇ Debian [D]?"
+msgstr "Slackware [S], RPM [R] è¿˜æ˜¯ Debian [D]?"
 
 msgid "Please write a description for the package."
-msgstr "ÇëÎªÕâ¸öÈí¼ş°üĞ´Ò»¸öÃèÊö¡£"
+msgstr "è¯·ä¸ºè¿™ä¸ªè½¯ä»¶åŒ…å†™ä¸€ä¸ªæè¿°ã€‚"
 
 msgid " Remember that pkgtool shows"
-msgstr "Òª¼Ç×¡£¬pkgtool Ö»ÏÔÊ¾"
+msgstr "è¦è®°ä½ï¼Œpkgtool åªæ˜¾ç¤º"
 
 msgid "only the first one when listing packages so make that one descriptive."
-msgstr "Ç°ÃæµÄÒ»¸ö£¬ÔÚÏÔÊ¾Èí¼ş°üÁĞ±íÊ±£¬ËùÒÔÓÃ¸ü¾ßÌåµÄÃèÊöÀ´±íÊ¾Ëü¡£"
+msgstr "å‰é¢çš„ä¸€ä¸ªï¼Œåœ¨æ˜¾ç¤ºè½¯ä»¶åŒ…åˆ—è¡¨æ—¶ï¼Œæ‰€ä»¥ç”¨æ›´å…·ä½“çš„æè¿°æ¥è¡¨ç¤ºå®ƒã€‚"
 
 msgid "End your description with an empty line or EOF."
-msgstr "ÓÃÒ»¸ö¿ÕĞĞ»ò EOF À´½áÊøÄãµÄÃèÊö¡£"
+msgstr "ç”¨ä¸€ä¸ªç©ºè¡Œæˆ– EOF æ¥ç»“æŸä½ çš„æè¿°ã€‚"
 
 msgid "Package created with checkinstall $CHECKINSTALL_VERSION"
-msgstr "Èí¼ş°üÊÇÓÃ checkinstall $CHECKINSTALL_VERSION À´´´½¨µÄ"
+msgstr "è½¯ä»¶åŒ…æ˜¯ç”¨ checkinstall $CHECKINSTALL_VERSION æ¥åˆ›å»ºçš„"
 
 msgid "Warning: Your package description is bigger than 11 lines."
-msgstr "¾¯¸æ£ºÄãµÄÈí¼ş°üÃèÊö±È11ĞĞ¶à¡£"
+msgstr "è­¦å‘Šï¼šä½ çš„è½¯ä»¶åŒ…æè¿°æ¯”11è¡Œå¤šã€‚"
 
 msgid "Warning: The Slackware 8.1+ pkgtools might not like it."
-msgstr "¾¯¸æ£ºSlackware 8.1 ÒÔÉÏµÄ pkgtools ¿ÉÄÜ²»ÔÊĞíÕâÑù¡£"
+msgstr "è­¦å‘Šï¼šSlackware 8.1 ä»¥ä¸Šçš„ pkgtools å¯èƒ½ä¸å…è®¸è¿™æ ·ã€‚"
 
 msgid "*** Warning: The package name"
-msgstr "*** ¾¯¸æ£ºÈí¼ş°üÃû³Æ"
+msgstr "*** è­¦å‘Šï¼šè½¯ä»¶åŒ…åç§°"
 
 msgid "contains upper case"
-msgstr "°üº¬ÁË´óĞ´"
+msgstr "åŒ…å«äº†å¤§å†™"
 
 msgid "*** Warning: letters. dpkg might not like that so I changed"
-msgstr "*** ¾¯¸æ£º×ÖÄ¸¡£dpkg ¿ÉÄÜ²»ÔÊĞíÕâÑù£¬ËùÒÔÎÒ°ÑËüÃÇ"
+msgstr "*** è­¦å‘Šï¼šå­—æ¯ã€‚dpkg å¯èƒ½ä¸å…è®¸è¿™æ ·ï¼Œæ‰€ä»¥æˆ‘æŠŠå®ƒä»¬"
 
 msgid "*** Warning: them to lower case."
-msgstr "*** ¾¯¸æ£º¸Ä³ÉĞ¡Ğ´×ÖÄ¸¡£"
+msgstr "*** è­¦å‘Šï¼šæ”¹æˆå°å†™å­—æ¯ã€‚"
 
 msgid "*** Warning: The package version \"${VERSION}\" does not"
-msgstr "*** ¾¯¸æ£ºÈí¼ş°ü°æ±¾ \"${VERSION}\" ²»°üº¬"
+msgstr "*** è­¦å‘Šï¼šè½¯ä»¶åŒ…ç‰ˆæœ¬ \"${VERSION}\" ä¸åŒ…å«"
 
 msgid "*** Warning: contain any digits. dpkg might not like that."
-msgstr "*** ¾¯¸æ£ºÈÎºÎÊı×Ö¡£dpkg ¿ÉÄÜ²»ÔÊĞíÕâÑù¡£"
+msgstr "*** è­¦å‘Šï¼šä»»ä½•æ•°å­—ã€‚dpkg å¯èƒ½ä¸å…è®¸è¿™æ ·ã€‚"
 
 msgid "This package will be built according to these values: "
-msgstr "Èí¼ş°ü½«ÓÃÏÂÃæµÄÖµÀ´´´½¨£º"
+msgstr "è½¯ä»¶åŒ…å°†ç”¨ä¸‹é¢çš„å€¼æ¥åˆ›å»ºï¼š"
 
 msgid "0 -  Maintainer:"
-msgstr "0 - Î¬»¤Õß£º"
+msgstr "0 - ç»´æŠ¤è€…ï¼š"
 
 msgid "1 -  Summary:"
-msgstr "1 - ¼ò½é£º"
+msgstr "1 - ç®€ä»‹ï¼š"
 
 msgid "2 -  Name:"
-msgstr "2 - Ãû³Æ£º"
+msgstr "2 - åç§°ï¼š"
 
 msgid "3 -  Version:"
-msgstr "3 - °æ±¾ºÅ£º"
+msgstr "3 - ç‰ˆæœ¬å·ï¼š"
 
 msgid "5 -  License:"
-msgstr "5 - °æÈ¨Ğ­Òé£º"
+msgstr "5 - ç‰ˆæƒåè®®ï¼š"
 
 msgid "6 -  Group:"
-msgstr "6 - ¿ª·¢×é£º"
+msgstr "6 - å¼€å‘ç»„ï¼š"
 
 msgid "7 -  Architecture:"
-msgstr "7 - Ê¹ÓÃÆ½Ì¨£º"
+msgstr "7 - ä½¿ç”¨å¹³å°ï¼š"
 
 msgid "8 -  Source location:"
-msgstr "8 - Ô´ÂëÎ»ÖÃ£º"
+msgstr "8 - æºç ä½ç½®ï¼š"
 
 msgid "9 -  Alternate source location:"
-msgstr "9 - ±¸ÓÃÔ´ÂëÎ»ÖÃ£º"
+msgstr "9 - å¤‡ç”¨æºç ä½ç½®ï¼š"
 
 msgid "10 - Provides:"
-msgstr "10 - Ìá¹©£º"
+msgstr "10 - æä¾›ï¼š"
 
 msgid "11 - Requires:"
-msgstr "11 - ÒÀÀµ£º"
+msgstr "11 - ä¾èµ–ï¼š"
 
 msgid "Enter a number to change any of them or press ENTER to continue: "
-msgstr "ÊäÈëÒ»¸öÊı×ÖÀ´¸Ä±äËüÃÇ£¬»ò°´»Ø³µ¼ü¼ÌĞø£º"
+msgstr "è¾“å…¥ä¸€ä¸ªæ•°å­—æ¥æ”¹å˜å®ƒä»¬ï¼Œæˆ–æŒ‰å›è½¦é”®ç»§ç»­ï¼š"
 
 msgid "Enter new summary: "
-msgstr "ÊäÈëĞÂµÄ¼ò½é£º"
+msgstr "è¾“å…¥æ–°çš„ç®€ä»‹ï¼š"
 
 msgid "Enter new name: "
-msgstr "ÊäÈëĞÂµÄÃû³Æ£º"
+msgstr "è¾“å…¥æ–°çš„åç§°ï¼š"
 
 msgid "Enter new version: "
-msgstr "ÊäÈëĞÂµÄ°æ±¾ºÅ"
+msgstr "è¾“å…¥æ–°çš„ç‰ˆæœ¬å·"
 
 msgid "Enter new release number: "
-msgstr "ÊäÈëĞÂµÄ·¢²¼ºÅ£º"
+msgstr "è¾“å…¥æ–°çš„å‘å¸ƒå·ï¼š"
 
 msgid "Enter the license type: "
-msgstr "ÊäÈë°æÈ¨Ğ­Òé£º"
+msgstr "è¾“å…¥ç‰ˆæƒåè®®ï¼š"
 
 msgid "Enter the new software group: "
-msgstr "ÊäÈëĞÂµÄ¿ª·¢×é£º"
+msgstr "è¾“å…¥æ–°çš„å¼€å‘ç»„ï¼š"
 
 msgid "Enter the architecture type: "
-msgstr "ÊäÈëÊ¹ÓÃÆ½Ì¨£º"
+msgstr "è¾“å…¥ä½¿ç”¨å¹³å°ï¼š"
 
 msgid "Enter the source location: "
-msgstr "ÊäÈëÔ´ÂëÎ»ÖÃ£º"
+msgstr "è¾“å…¥æºç ä½ç½®ï¼š"
 
 msgid "Enter the alternate source location: "
-msgstr "ÊäÈë±¸ÓÃÔ´ÂëÎ»ÖÃ£º"
+msgstr "è¾“å…¥å¤‡ç”¨æºç ä½ç½®ï¼š"
 
 msgid "Enter the maintaner's name and e-mail address: "
-msgstr "ÊäÈëÎ¬»¤ÕßµÄÃû×ÖºÍ e-mail µØÖ·£º"
+msgstr "è¾“å…¥ç»´æŠ¤è€…çš„åå­—å’Œ e-mail åœ°å€ï¼š"
 
 msgid "Enter the provided features: "
-msgstr "ÊäÈëÌá¹©µÄÌØĞÔ£º"
+msgstr "è¾“å…¥æä¾›çš„ç‰¹æ€§ï¼š"
 
 msgid "Enter the additional requirements: "
-msgstr "ÊäÈë¶îÍâµÄĞèÇó£º"
+msgstr "è¾“å…¥é¢å¤–çš„éœ€æ±‚ï¼š"
 
 msgid "********************************************"
 msgstr "********************************************"
 
 msgid "**** Slackware package creation selected ***"
-msgstr "**** Ñ¡ÔñÁË´´½¨ Slackware °ü ***"
+msgstr "**** é€‰æ‹©äº†åˆ›å»º Slackware åŒ… ***"
 
 msgid "*** The \"installpkg\" program is not in your PATH!"
-msgstr "*** The \"installpkg\" ³ÌĞò²»ÔÚÄãµÄ PATH »·¾³±äÁ¿ÖĞ£¡"
+msgstr "*** The \"installpkg\" ç¨‹åºä¸åœ¨ä½ çš„ PATH ç¯å¢ƒå˜é‡ä¸­ï¼"
 
 msgid "*** Slackware package creation aborted"
-msgstr "*** Slackware °ü´´½¨¹ı³ÌÒâÍâÖĞÖ¹"
+msgstr "*** Slackware åŒ…åˆ›å»ºè¿‡ç¨‹æ„å¤–ä¸­æ­¢"
 
 msgid "Preparing Slackware install directory..."
-msgstr "×¼±¸ Slackware °²×°Ä¿Â¼¡­¡­"
+msgstr "å‡†å¤‡ Slackware å®‰è£…ç›®å½•â€¦â€¦"
 
 msgid "Writing package description..."
-msgstr "Ğ´Èí¼ş°üÃèÊö¡­¡­"
+msgstr "å†™è½¯ä»¶åŒ…æè¿°â€¦â€¦"
 
 msgid "Writing Slackware install script..."
-msgstr "Ğ´ Slackware °²×°½Å±¾¡­¡­"
+msgstr "å†™ Slackware å®‰è£…è„šæœ¬â€¦â€¦"
 
 msgid "Appending your script to the main install script..."
-msgstr "½«ÄãµÄ½Å±¾¸½¼Óµ½Ö÷°²×°½Å±¾ºó¡­¡­"
+msgstr "å°†ä½ çš„è„šæœ¬é™„åŠ åˆ°ä¸»å®‰è£…è„šæœ¬åâ€¦â€¦"
 
 msgid "Creating package ${SLACK_PKG_BASENAME}..."
-msgstr "´´½¨ ${SLACK_PKG_BASENAME} °ü¡­¡­"
+msgstr "åˆ›å»º ${SLACK_PKG_BASENAME} åŒ…â€¦â€¦"
 
 msgid "Installing package..."
-msgstr "°²×°Èí¼ş°ü¡­¡­"
+msgstr "å®‰è£…è½¯ä»¶åŒ…â€¦â€¦"
 
 msgid "*** Failed to install the package"
-msgstr "*** °²×°Èí¼ş°üÊ§°Ü"
+msgstr "*** å®‰è£…è½¯ä»¶åŒ…å¤±è´¥"
 
 msgid "Do you want to see the log file? "
-msgstr "ÄãÏë¿´ÈÕÖ¾ÎÄ¼şÃ´£¿"
+msgstr "ä½ æƒ³çœ‹æ—¥å¿—æ–‡ä»¶ä¹ˆï¼Ÿ"
 
 msgid "NOTE: The package will not be installed."
-msgstr "×¢Òâ£ºÕâ¸ö°ü½«²»±»°²×°¡£"
+msgstr "æ³¨æ„ï¼šè¿™ä¸ªåŒ…å°†ä¸è¢«å®‰è£…ã€‚"
 
 msgid "**************************************"
 msgstr "**************************************"
 
 msgid "**** RPM package creation selected ***"
-msgstr "*** Ñ¡ÔñÁË´´½¨ RPM °ü ***"
+msgstr "*** é€‰æ‹©äº†åˆ›å»º RPM åŒ… ***"
 
 msgid "*** The \"rpm\" program is not in your PATH!"
-msgstr "*** \"rpm\" ³ÌĞò²»ÔÚÄãµÄ PATH »·¾³±äÁ¿ÖĞ£¡"
+msgstr "*** \"rpm\" ç¨‹åºä¸åœ¨ä½ çš„ PATH ç¯å¢ƒå˜é‡ä¸­ï¼"
 
 msgid "*** RPM package creation aborted"
-msgstr "*** RPM °ü´´½¨¹ı³ÌÒâÍâÖĞÖ¹"
+msgstr "*** RPM åŒ…åˆ›å»ºè¿‡ç¨‹æ„å¤–ä¸­æ­¢"
 
 msgid "$RPMSOURCEDIR has no SOURCES directory. Please write the path to"
-msgstr "$RPMSOURCEDIR Ã»ÓĞ SOURCES Ä¿Â¼¡£ÇëĞ´³ö"
+msgstr "$RPMSOURCEDIR æ²¡æœ‰ SOURCES ç›®å½•ã€‚è¯·å†™å‡º"
 
 msgid "the RPM source directory tree: "
-msgstr "RPM source Ä¿Â¼µÄÂ·¾¶£º"
+msgstr "RPM source ç›®å½•çš„è·¯å¾„ï¼š"
 
 msgid "You requested to review the .spec file for this package."
-msgstr "ÄãÒªÇó¼ì²éÕâ¸ö°üµÄ .spec ÎÄ¼ş"
+msgstr "ä½ è¦æ±‚æ£€æŸ¥è¿™ä¸ªåŒ…çš„ .spec æ–‡ä»¶"
 
 msgid "Building RPM package..."
-msgstr "´´½¨ RPM °ü¡­¡­"
+msgstr "åˆ›å»º RPM åŒ…â€¦â€¦"
 
 msgid "*** Failed to build the package"
-msgstr "*** ´´½¨°üÊ§°Ü"
+msgstr "*** åˆ›å»ºåŒ…å¤±è´¥"
 
 msgid "Warning: the use of RPMFLAGS is deprecated."
-msgstr "¾¯¸æ£º²»ÍÆ¼öÊ¹ÓÃ RPMFLAGS."
+msgstr "è­¦å‘Šï¼šä¸æ¨èä½¿ç”¨ RPMFLAGS."
 
 msgid "Warning: You should now use RPM_FLAGS,"
-msgstr "¾¯¸æ£ºÄãÏÖÔÚÓ¦¸ÃÊ¹ÓÃRPM_FLAGS£¬"
+msgstr "è­¦å‘Šï¼šä½ ç°åœ¨åº”è¯¥ä½¿ç”¨RPM_FLAGSï¼Œ"
 
 msgid "Warning: please update your checkinstallrc file."
-msgstr "¾¯¸æ£ºÇë¸üĞÂµÄÄã checkinstallrc ÎÄ¼ş¡£"
+msgstr "è­¦å‘Šï¼šè¯·æ›´æ–°çš„ä½  checkinstallrc æ–‡ä»¶ã€‚"
 
 msgid "Installing RPM package..."
-msgstr "°²×° RPM °ü¡­¡­"
+msgstr "å®‰è£… RPM åŒ…â€¦â€¦"
 
 msgid "NOTE: The package will not be installed"
-msgstr "×¢Òâ£ºÕâ¸ö°ü½«²»±»°²×°"
+msgstr "æ³¨æ„ï¼šè¿™ä¸ªåŒ…å°†ä¸è¢«å®‰è£…"
 
 msgid "*****************************************"
 msgstr "*****************************************"
 
 msgid "**** Debian package creation selected ***"
-msgstr "**** Ñ¡ÔñÁË´´½¨ Debian °ü ***"
+msgstr "**** é€‰æ‹©äº†åˆ›å»º Debian åŒ… ***"
 
 msgid "*** The \"dpkg\" program is not in your PATH!"
-msgstr "*** \"dpkg\" ³ÌĞò²»ÔÚÄãµÄ PATH »·¾³±äÁ¿ÖĞ£¡"
+msgstr "*** \"dpkg\" ç¨‹åºä¸åœ¨ä½ çš„ PATH ç¯å¢ƒå˜é‡ä¸­ï¼"
 
 msgid "*** Debian package creation aborted"
-msgstr "*** Debian °ü´´½¨¹ı³ÌÒâÍâÖĞÖ¹"
+msgstr "*** Debian åŒ…åˆ›å»ºè¿‡ç¨‹æ„å¤–ä¸­æ­¢"
 
 msgid "You requested to review the control file for this package."
-msgstr "ÄãÒªÇó¼ì²éÕâ¸ö°üµÄ control ÎÄ¼ş¡£"
+msgstr "ä½ è¦æ±‚æ£€æŸ¥è¿™ä¸ªåŒ…çš„ control æ–‡ä»¶ã€‚"
 
 msgid "Building Debian package..."
-msgstr "´´½¨ Debian °ü¡­¡­"
+msgstr "åˆ›å»º Debian åŒ…â€¦â€¦"
 
 msgid "Installing Debian package..."
-msgstr "°²×° Debian °ü¡­¡­"
+msgstr "å®‰è£… Debian åŒ…â€¦â€¦"
 
 msgid "*** No method was selected, I won't build any package."
-msgstr "*** ÄãÊ²Ã´·½·¨Ò²Ã»Ñ¡£¬ÎÒ½«²»´´½¨ÈÎºÎ°ü¡£"
+msgstr "*** ä½ ä»€ä¹ˆæ–¹æ³•ä¹Ÿæ²¡é€‰ï¼Œæˆ‘å°†ä¸åˆ›å»ºä»»ä½•åŒ…ã€‚"
 
 msgid "*** The installation command \"$INSTALLCMD\""
-msgstr "*** °²×°ÃüÁî \"$INSTALLCMD\""
+msgstr "*** å®‰è£…å‘½ä»¤ \"$INSTALLCMD\""
 
 msgid "*** has already been executed."
-msgstr "*** ÒÑ¾­Ö´ĞĞÁË¡£"
+msgstr "*** å·²ç»æ‰§è¡Œäº†ã€‚"
 
 msgid "The package storage directory"
-msgstr "Èí¼ş°ü´æ·ÅÄ¿Â¼"
+msgstr "è½¯ä»¶åŒ…å­˜æ”¾ç›®å½•"
 
 msgid "doesn't exist. Do you want to create it?"
-msgstr "²»´æÔÚ¡£ÄãÏë´´½¨ËüÃ´£¿"
+msgstr "ä¸å­˜åœ¨ã€‚ä½ æƒ³åˆ›å»ºå®ƒä¹ˆï¼Ÿ"
 
 msgid "Creating package storage directory..."
-msgstr "´´½¨Èí¼ş°ü´æ·ÅÄ¿Â¼¡­¡­"
+msgstr "åˆ›å»ºè½¯ä»¶åŒ…å­˜æ”¾ç›®å½•â€¦â€¦"
 
 msgid "*** Unable to create $PAK_DIR"
-msgstr "*** ²»ÄÜ´´½¨ $PAK_DIR"
+msgstr "*** ä¸èƒ½åˆ›å»º $PAK_DIR"
 
 msgid "Transferring package to"
-msgstr "°Ñ°ü×ªÒÆµ½"
+msgstr "æŠŠåŒ…è½¬ç§»åˆ°"
 
 msgid "There's no package storage directory, the package"
-msgstr "Ã»ÓĞ°ü´æ·ÅÄ¿Â¼£¬Õâ¸ö°ü"
+msgstr "æ²¡æœ‰åŒ…å­˜æ”¾ç›®å½•ï¼Œè¿™ä¸ªåŒ…"
 
 msgid "will be stored at the default location."
-msgstr "½«±»´æ·ÅÔÚÈ±Ê¡µÄÎ»ÖÃ¡£"
+msgstr "å°†è¢«å­˜æ”¾åœ¨ç¼ºçœçš„ä½ç½®ã€‚"
 
 msgid "Erasing temporary files..."
-msgstr "É¾³ıÁÙÊ±ÎÄ¼ş¡­¡­"
+msgstr "åˆ é™¤ä¸´æ—¶æ–‡ä»¶â€¦â€¦"
 
 msgid "Deleting doc-pak directory..."
-msgstr "É¾³ı doc-pak Ä¿Â¼¡­¡­"
+msgstr "åˆ é™¤ doc-pak ç›®å½•â€¦â€¦"
 
 msgid "Writing backup package..."
-msgstr "Éú³É±¸·İ°ü¡­¡­"
+msgstr "ç”Ÿæˆå¤‡ä»½åŒ…â€¦â€¦"
 
 msgid "Deleting temp dir..."
-msgstr "É¾³ıÁÙÊ±Ä¿Â¼¡­¡­"
+msgstr "åˆ é™¤ä¸´æ—¶ç›®å½•â€¦â€¦"
 
 msgid "Building debug information package..."
-msgstr "´´½¨°üµÄµ÷ÊÔĞÅÏ¢¡­¡­"
+msgstr "åˆ›å»ºåŒ…çš„è°ƒè¯•ä¿¡æ¯â€¦â€¦"
 
 msgid " Done. The new package has been installed and saved to"
-msgstr "½áÊø¡£ĞÂ°üÒÑ¾­°²×°ÁË£¬²¢´æ·ÅÔÚ"
+msgstr "ç»“æŸã€‚æ–°åŒ…å·²ç»å®‰è£…äº†ï¼Œå¹¶å­˜æ”¾åœ¨"
 
 msgid " You can remove it from your system anytime using: "
-msgstr "ÄãÊ²Ã´Ê±ºò¶¼ÄÜÓÃÏÂÁĞÃüÁî°ÑËü´ÓÏµÍ³ÀïÉ¾³ı£º"
+msgstr "ä½ ä»€ä¹ˆæ—¶å€™éƒ½èƒ½ç”¨ä¸‹åˆ—å‘½ä»¤æŠŠå®ƒä»ç³»ç»Ÿé‡Œåˆ é™¤ï¼š"
 
 msgid " Done. The new package has been saved to"
-msgstr "½áÊø¡£ĞÂ°ü´æ·ÅÔÚ"
+msgstr "ç»“æŸã€‚æ–°åŒ…å­˜æ”¾åœ¨"
 
 msgid " You can install it in your system anytime using: "
-msgstr "ÄãÊ²Ã´Ê±ºò¶¼ÄÜÓÃÏÂÁĞÃüÁî°²×°Ëü£º"
+msgstr "ä½ ä»€ä¹ˆæ—¶å€™éƒ½èƒ½ç”¨ä¸‹åˆ—å‘½ä»¤å®‰è£…å®ƒï¼š"

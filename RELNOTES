@@ -275,7 +275,7 @@ linked binaries and .deb packaging format support. Stay tuned  :).
 
 * The variable definition section inside the checkinstall script is gone.
   Now you should edit the checkinstallrc file, normally installed under
-  /usr/local/lib/checkinstall
+  /etc
 
 * Added an option ("--exclude") to tell checkinstall wich directories to ignore
   while searchig for modified files.

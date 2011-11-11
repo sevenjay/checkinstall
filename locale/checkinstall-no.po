@@ -1,4 +1,4 @@
-# MESSAGES FOR CHECKINSTALL-1.6.0beta1 in Norwegian 
+# MESSAGES FOR CHECKINSTALL-1.6.0beta1 in Norwegian (Bokmal)
 # Copyright (C) 2002 Felipe Eduardo Sanchez Diaz Duran
 # Felipe Eduardo Sanchez Diaz Duran <izto@asic-linux.com.mx>, 2002.
 #
@@ -12,11 +12,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.6.0beta1\n"
 "POT-Creation-Date: 2002-11-27 00:58-0600\n"
-"PO-Revision-Date:  2002-11-27 00:58-0600\n"
+"PO-Revision-Date:  2009-12-07 16:55:56+0100\n"
 "Last-Translator: Felipe Eduardo Sanchez Diaz Duran <izto@asic-linux.com.mx>\n"
 "Language-Team: ES <izto@asic-linux.com.mx>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "           This software is released under the GNU GPL."
@@ -53,7 +53,7 @@ msgid "*Scripting options*"
 msgstr "*Scripting valg*"
 
 msgid "-y, --default                  Accept default answers to all questions"
-msgstr "-y, --default                 Godta forvalgt svar på alle"
+msgstr "-y, --default                 Godta forvalgt svar pÃ¥ alle"
 
 msgid "--pkgname=<name>               Set name"
 msgstr "--pkgname=<name>              Sett navn"
@@ -137,13 +137,13 @@ msgid ""
 "--strip=<yes|no>               Strip any ELF binaries found inside the "
 "package"
 msgstr ""
-"--strip=<yes|no>               Avkle alle ELF Binærer funnet inni "
+"--strip=<yes|no>               Avkle alle ELF BinÃ¦rer funnet inni "
 "pakke"
 
 msgid ""
 "--stripso=<yes|no>             Strip any ELF binary libraries (.so files)"
 msgstr ""
-"--stripso=<yes|no>      Avkle alle ELF binære biblioteker (.so filer)"
+"--stripso=<yes|no>      Avkle alle ELF binÃ¦re biblioteker (.so filer)"
 
 msgid ""
 "--gzman=<yes|no>               Compress any man pages found inside the "
@@ -173,12 +173,12 @@ msgstr "--inspect                     Inspiser pakkens filliste"
 msgid ""
 "--review-spec                  Review the spec file before creating a .rpm"
 msgstr ""
-"--review-spec                  Forhåndsvis spec-filen før bygging av .rpm"
+"--review-spec                  ForhÃ¥ndsvis spec-filen fÃ¸r bygging av .rpm"
 
 msgid ""
 "--review-control               Review the control file before creating a .deb"
 msgstr ""
-"--review-control              Forhåndsvis kontrollfilen før bygging av .deb"
+"--review-control              ForhÃ¥ndsvis kontrollfilen fÃ¸r bygging av .deb"
 
 msgid ""
 "--newslack                     Use the new (8.1+) Slackware description "
@@ -206,7 +206,7 @@ msgid "--bk                           Backup any overwritten files"
 msgstr "--bk                          Backup og overskrevne filer"
 
 msgid "--backup=<yes|no>              Toggle backup"
-msgstr "--backup=<yes|no>             Slå av/på backup"
+msgstr "--backup=<yes|no>             SlÃ¥ av/pÃ¥ backup"
 
 msgid "*About CheckInstall*"
 msgstr "*Om CheckInstall*"
@@ -254,7 +254,7 @@ msgid "modify the INSTALLWATCH variable in this script,"
 msgstr "modifiser INSTALLWATCH'ens variabel i dette scriptet,"
 
 msgid "then run checkinstall again."
-msgstr "og kjør checkinstall igjen."
+msgstr "og kjÃ¸r checkinstall igjen."
 
 msgid "My temp dir exists already."
 msgstr "Min midlertidige mappe eksisterer allerede."
@@ -272,7 +272,7 @@ msgid "edit the variable definition for"
 msgstr "forandre definisjonen av variabelen for"
 
 msgid "and try again."
-msgstr "og prøv igjen."
+msgstr "og prÃ¸v igjen."
 
 msgid "**** Failed to create temp dir!"
 msgstr "*** Kunne ikke opprette midlertidig mappe!"
@@ -336,28 +336,28 @@ msgid "Should I exclude them from the package? (Saying yes is a good idea) "
 msgstr "Skal jeg eksludere dem fra pakken? (ja er en god ide) "
 
 msgid "You requested to review the list of files that will be"
-msgstr "Du ville forhåndsvise listen av filer som vil bli"
+msgstr "Du ville forhÃ¥ndsvise listen av filer som vil bli"
 
 msgid "included in this package."
 msgstr "inkludert i denne pakken."
 
 msgid "Now you'll have the chance to review and optionally modify it."
-msgstr "Du vil nå ha sjansen til å forhåndsvise og evt. modifisere den."
+msgstr "Du vil nÃ¥ ha sjansen til Ã¥ forhÃ¥ndsvise og evt. modifisere den."
 
 msgid "Now you'll have the chance to review and optionally modify this file."
-msgstr "Du vil nå ha sjansen til å forhåndsvise og evt. modifisere denne fila."
+msgstr "Du vil nÃ¥ ha sjansen til Ã¥ forhÃ¥ndsvise og evt. modifisere denne fila."
 
 msgid "Press ENTER to continue."
-msgstr "Trykk ENTER for å fortsette."
+msgstr "Trykk ENTER for Ã¥ fortsette."
 
 msgid "Copying files to the temporary directory..."
 msgstr "Kopierer filer til midlertidig mappe..."
 
 msgid "Striping ELF binaries and libraries..."
-msgstr "Avkler ELF binærer og biblioteker..."
+msgstr "Avkler ELF binÃ¦rer og biblioteker..."
 
 msgid "Striping ELF binaries..."
-msgstr "Avkler ELF binærer..."
+msgstr "Avkler ELF binÃ¦rer..."
 
 msgid "Compressing man pages..."
 msgstr "Kompresser manualsider..."
@@ -378,7 +378,7 @@ msgid " Remember that pkgtool shows"
 msgstr " Husk at pkgtool viser"
 
 msgid "only the first one when listing packages so make that one descriptive."
-msgstr "kun den første når man lister pakker så lag den innholdsrik."
+msgstr "kun den fÃ¸rste nÃ¥r man lister pakker sÃ¥ lag den innholdsrik."
 
 msgid "End your description with an empty line or EOF."
 msgstr "Avslutt din fortegnelse med en tom linje eller EOF."
@@ -387,7 +387,7 @@ msgid "Package created with checkinstall $CHECKINSTALL_VERSION"
 msgstr "Pakke bygd med checkinstall $CHECKINSTALL_VERSION"
 
 msgid "Warning: Your package description is bigger than 11 lines."
-msgstr "Advarsel: Din pakkefortegnelse er større enn 11 linjer."
+msgstr "Advarsel: Din pakkefortegnelse er stÃ¸rre enn 11 linjer."
 
 msgid "Warning: The Slackware 8.1+ pkgtools might not like it."
 msgstr "Advarsel: Slackware 8.1+'s pkgtools liker kanskje ikke det."
@@ -399,13 +399,13 @@ msgid "contains upper case"
 msgstr "inneholder store bokstaver"
 
 msgid "*** Warning: letters. dpkg might not like that so I changed"
-msgstr "*** Advarsel: bokstaver. dpkg liker kanskje ikke det så jeg byttet"
+msgstr "*** Advarsel: bokstaver. dpkg liker kanskje ikke det sÃ¥ jeg byttet"
 
 msgid "*** Warning: them to lower case."
-msgstr "*** Advarsel: de til små bokstaver."
+msgstr "*** Advarsel: de til smÃ¥ bokstaver."
 
 msgid "*** Warning: The package version \"${VERSION}\" does not"
-msgstr "*** Advarsel: Pakkeversjon \"${VERSION}\" gjør ikke det"
+msgstr "*** Advarsel: Pakkeversjon \"${VERSION}\" gjÃ¸r ikke det"
 
 msgid "*** Warning: contain any digits. dpkg might not like that."
 msgstr "*** Advarsel: inneholder siffer. dpkg liker kanskje ikke det."
@@ -447,7 +447,7 @@ msgid "11 - Requires:"
 msgstr "11 - Krever:"
 
 msgid "Enter a number to change any of them or press ENTER to continue: "
-msgstr "Legg til et tall for å bytte noe eller trykk ENTER for å fortsette: "
+msgstr "Legg til et tall for Ã¥ bytte noe eller trykk ENTER for Ã¥ fortsette: "
 
 msgid "Enter new summary: "
 msgstr "Legg til ny oppsummering: "
@@ -555,7 +555,7 @@ msgid "Warning: the use of RPMFLAGS is deprecated."
 msgstr "Advarsel: bruken av RPMFLAGS er ikke foretrukket"
 
 msgid "Warning: You should now use RPM_FLAGS,"
-msgstr "Advarsel: Du burde nå bruke RPM_FLAGS,"
+msgstr "Advarsel: Du burde nÃ¥ bruke RPM_FLAGS,"
 
 msgid "Warning: please update your checkinstallrc file."
 msgstr "Advarsel: vennligst oppdater din checkinstallrc fil."
@@ -594,7 +594,7 @@ msgid "*** The installation command \"$INSTALLCMD\""
 msgstr "*** Installasjons kommando \"$INSTALLCMD\""
 
 msgid "*** has already been executed."
-msgstr "*** har allerede blitt kjørt."
+msgstr "*** har allerede blitt kjÃ¸rt."
 
 msgid "The package storage directory"
 msgstr "Pakkelagrings mappe"
@@ -615,7 +615,7 @@ msgid "There's no package storage directory, the package"
 msgstr "Det er ingen pakkelagringsplass, pakken"
 
 msgid "will be stored at the default location."
-msgstr "vil bli lagret på standard plass."
+msgstr "vil bli lagret pÃ¥ standard plass."
 
 msgid "Erasing temporary files..."
 msgstr "Sletter midlertidige filer..."
@@ -633,13 +633,13 @@ msgid "Building debug information package..."
 msgstr "Bygger debug informasjons pakke..."
 
 msgid " Done. The new package has been installed and saved to"
-msgstr " Ferdig. Den nye pakken har blitt installert og lagret på"
+msgstr " Ferdig. Den nye pakken har blitt installert og lagret pÃ¥"
 
 msgid " You can remove it from your system anytime using: "
-msgstr " Du kan fjerne den fra systemet ditt når som helst ved å:"
+msgstr " Du kan fjerne den fra systemet ditt nÃ¥r som helst ved Ã¥:"
 
 msgid " Done. The new package has been saved to"
-msgstr " Ferdig. Pakken har nå blitt lagret på"
+msgstr " Ferdig. Pakken har nÃ¥ blitt lagret pÃ¥"
 
 msgid " You can install it in your system anytime using: "
-msgstr " Du kan installere den på systemet ditt når som helst ved å:"
+msgstr " Du kan installere den pÃ¥ systemet ditt nÃ¥r som helst ved Ã¥:"

@@ -2463,7 +2463,7 @@ cd "$DIRECTORIO_FUENTE"
 
 echo
 echogn "Building RPM package..."
-$RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" &> ${TMP_DIR}/rpmbuild.log
+$RPMBUILD --buildroot ${BUILDROOT} -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" &> ${TMP_DIR}/rpmbuild.log
 okfail
 
 if [ $? -gt 0 ]; then

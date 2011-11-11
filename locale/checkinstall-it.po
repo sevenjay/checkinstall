@@ -1,31 +1,20 @@
-# translation of checkinstall-it.po to ITALIANO
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-it.po to
-# translation of checkinstall-template.po to
+# translation of checkinstall-template.po to italian
 # Michele Petrecca <michelinux@alice.it>, 2005, 2006.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: checkinstall-it\n"
 "POT-Creation-Date: 2002-11-27 00:58-0600\n"
-"PO-Revision-Date: 2006-01-29 16:11+0100\n"
+"PO-Revision-Date: 2009-12-07 16:54:07+0100\n"
 "Last-Translator: Michele Petrecca <michelinux@alice.it>\n"
 "Language-Team: ITALIANO\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
 
 msgid "           This software is released under the GNU GPL."
-msgstr "           Questo software Ë rilasciato sotto i termini della licenza GNU GPL."
+msgstr "           Questo software √® rilasciato sotto i termini della licenza GNU GPL."
 
 msgid "Usage: checkinstall [options] [command [command arguments]]"
 msgstr "Uso: checkinstall [opzioni] [comando [argomenti comando]]"
@@ -85,7 +74,7 @@ msgid "--pkgaltsource=<altsource>     Set alternate source location"
 msgstr "--pkgaltsource=<altsource>     Imposta il percorso alternativo del sorgente"
 
 msgid "--pakdir=<directory>           The new package will be saved here"
-msgstr "--pakdir=<directory>           Il nuovo pacchetto verr‡ salvato nel percorso quÏ indicato"
+msgstr "--pakdir=<directory>           Il nuovo pacchetto verr√† salvato nel percorso qu√¨ indicato"
 
 msgid "--maintainer=<email addr>      The package maintainer (.deb)"
 msgstr "--maintainer=<email addr>      E-mail del curatore del pacchetto (.deb)"
@@ -211,10 +200,10 @@ msgid "--version                      Show version information"
 msgstr "--version                      Mostra le informazioni sulla versione"
 
 msgid "Use --help or -h to get more information"
-msgstr "Usa --help o -h per di ottenere pi˘ informazioni"
+msgstr "Usa --help o -h per di ottenere pi√π informazioni"
 
 msgid "is an invalid value for"
-msgstr "Ë un valore non valido per"
+msgstr "√® un valore non valido per"
 
 msgid "Restoring overwritten files from backup..."
 msgstr "Ripristina il file sovrascritto dal backup..."
@@ -229,16 +218,16 @@ msgid "Bye."
 msgstr "Ciao."
 
 msgid "The checkinstallrc file was not found at:"
-msgstr "Il file checkinstallrc non Ë stato trovato in:"
+msgstr "Il file checkinstallrc non √® stato trovato in:"
 
 msgid "Assuming default values."
 msgstr "Assunzione dei valori predefiniti."
 
 msgid "I can't find $INSTALLWATCH."
-msgstr "Non Ë possibile trovare $INSTALLWATCH."
+msgstr "Non √® possibile trovare $INSTALLWATCH."
 
 msgid "I can't continue. Either install installwatch or"
-msgstr "Non Ë possibile continuare. Installa installwatch oppure"
+msgstr "Non √® possibile continuare. Installa installwatch oppure"
 
 msgid "modify the INSTALLWATCH variable in this script,"
 msgstr "modifca la variabile INSTALLWATCH in questo script,"
@@ -247,7 +236,7 @@ msgid "then run checkinstall again."
 msgstr "quindi lancia di nuovo checkinstall."
 
 msgid "My temp dir exists already."
-msgstr "La cartella temporanea gi‡ esiste."
+msgstr "La cartella temporanea gi√† esiste."
 
 msgid "This looks like a symlink attack!"
 msgstr ""
@@ -256,7 +245,7 @@ msgid "*** Aborting"
 msgstr "*** Annullamento in corso"
 
 msgid "is an unacceptable value for the temp dir. Please"
-msgstr "Ë un valore inaccettabile per la cartella temp. Per favore"
+msgstr "√® un valore inaccettabile per la cartella temp. Per favore"
 
 msgid "edit the variable definition for"
 msgstr "modifica la variabile di definizione per"
@@ -280,10 +269,10 @@ msgid "Preparing package documentation..."
 msgstr "Preparazione documentazione pacchetto in corso..."
 
 msgid "*** No known documentation files were found. The new package"
-msgstr "*** Nessun file della documentazione Ë stato trovato. Il nuovo pacchetto"
+msgstr "*** Nessun file della documentazione √® stato trovato. Il nuovo pacchetto"
 
 msgid "*** won't include a documentation directory."
-msgstr "*** non includer‡ una cartella per la documentazione."
+msgstr "*** non includer√† una cartella per la documentazione."
 
 msgid "Copying documentation directory..."
 msgstr "Copiatura cartella documentazione in corso..."
@@ -319,7 +308,7 @@ msgid "Do you want me to list them? "
 msgstr ""
 
 msgid "Should I exclude them from the package? (Saying yes is a good idea) "
-msgstr "Li escluderesti dalla creazione del pacchetto? (dire SÏ e una buona idea!) "
+msgstr "Li escluderesti dalla creazione del pacchetto? (dire S√¨ e una buona idea!) "
 
 msgid "You requested to review the list of files that will be"
 msgstr "Hai richiesto di esaminare nuovamente la lista dei file che saranno"
@@ -328,10 +317,10 @@ msgid "included in this package."
 msgstr " inclusi in questo pacchetto."
 
 msgid "Now you'll have the chance to review and optionally modify it."
-msgstr "Ora avrai la possibilt‡ di esaminare di nuovo e, opzionalmente, di modificarlo."
+msgstr "Ora avrai la possibilt√† di esaminare di nuovo e, opzionalmente, di modificarlo."
 
 msgid "Now you'll have the chance to review and optionally modify this file."
-msgstr "Ora avrai la possibilt‡ di esaminare di nuovo e, opzionalmente, modificare questo file."
+msgstr "Ora avrai la possibilt√† di esaminare di nuovo e, opzionalmente, modificare questo file."
 
 msgid "Press ENTER to continue."
 msgstr "Premi INVIO per continuare."
@@ -373,7 +362,7 @@ msgid "Package created with checkinstall $CHECKINSTALL_VERSION"
 msgstr "Pacchetto creato con la versione di checkinstall $CHECKINSTALL_VERSION"
 
 msgid "Warning: Your package description is bigger than 11 lines."
-msgstr "Attenzione : La descrizione del pacchetto Ë superiore alle 11 linee."
+msgstr "Attenzione : La descrizione del pacchetto √® superiore alle 11 linee."
 
 msgid "Warning: The Slackware 8.1+ pkgtools might not like it."
 msgstr ""
@@ -397,7 +386,7 @@ msgid "*** Warning: contain any digits. dpkg might not like that."
 msgstr ""
 
 msgid "This package will be built according to these values: "
-msgstr "Il pacchetto verr‡ costruito con le seguenti caratteristiche: "
+msgstr "Il pacchetto verr√† costruito con le seguenti caratteristiche: "
 
 msgid "0 -  Maintainer:"
 msgstr "0 -  Curatore:"
@@ -478,7 +467,7 @@ msgid "**** Slackware package creation selected ***"
 msgstr "**** Selezionata la creazione di un pacchetto Slackware ***"
 
 msgid "*** The \"installpkg\" program is not in your PATH!"
-msgstr "*** Il programma \"installpkg\" non Ë indicato nella variabile d'ambiente PATH!"
+msgstr "*** Il programma \"installpkg\" non √® indicato nella variabile d'ambiente PATH!"
 
 msgid "*** Slackware package creation aborted"
 msgstr "*** Annullata la creazione del pacchetto Slackware"
@@ -508,7 +497,7 @@ msgid "Do you want to see the log file? "
 msgstr "Vuoi leggere il file di log? "
 
 msgid "NOTE: The package will not be installed."
-msgstr "NOTA: Il pacchetto non verr‡ installato."
+msgstr "NOTA: Il pacchetto non verr√† installato."
 
 msgid "**************************************"
 msgstr "**************************************"
@@ -517,7 +506,7 @@ msgid "**** RPM package creation selected ***"
 msgstr "**** Selezionata la creazione di un pacchetto RPM ***"
 
 msgid "*** The \"rpm\" program is not in your PATH!"
-msgstr "*** Il programma \"rpm\" non Ë indicato nella variabile d'ambiente PATH!"
+msgstr "*** Il programma \"rpm\" non √® indicato nella variabile d'ambiente PATH!"
 
 msgid "*** RPM package creation aborted"
 msgstr "*** Annullata la creazione del pacchetto RPM"
@@ -550,7 +539,7 @@ msgid "Installing RPM package..."
 msgstr "Installazione pacchetto RPM in corso..."
 
 msgid "NOTE: The package will not be installed"
-msgstr "NOTA: Il pacchetto non verr‡ installato"
+msgstr "NOTA: Il pacchetto non verr√† installato"
 
 msgid "*****************************************"
 msgstr "*****************************************"
@@ -559,7 +548,7 @@ msgid "**** Debian package creation selected ***"
 msgstr "**** Selezionata la creazione di un pacchetto Debian ***"
 
 msgid "*** The \"dpkg\" program is not in your PATH!"
-msgstr "*** Il programma \"dpkg\" non Ë indicato nella variabile d'ambiente PATH!"
+msgstr "*** Il programma \"dpkg\" non √® indicato nella variabile d'ambiente PATH!"
 
 msgid "*** Debian package creation aborted"
 msgstr "*** Annullata la creazione del pacchetto Debian"
@@ -574,13 +563,13 @@ msgid "Installing Debian package..."
 msgstr "Installazione pacchetto Debian in corso..."
 
 msgid "*** No method was selected, I won't build any package."
-msgstr "*** Nessun metodo Ë stato selezionato. Non vuoi costruire nessun pacchetto."
+msgstr "*** Nessun metodo √® stato selezionato. Non vuoi costruire nessun pacchetto."
 
 msgid "*** The installation command \"$INSTALLCMD\""
 msgstr "*** Il comando d'installazione \"$INSTALLCMD\""
 
 msgid "*** has already been executed."
-msgstr "*** Ë gi‡ stato eseguito."
+msgstr "*** √® gi√† stato eseguito."
 
 msgid "The package storage directory"
 msgstr "La cartella di immagazzinamento del pacchetto"
@@ -592,16 +581,16 @@ msgid "Creating package storage directory..."
 msgstr "Creazione cartella di immagazzinamento in corso..."
 
 msgid "*** Unable to create $PAK_DIR"
-msgstr "*** Non Ë possibile creare $PAK_DIR"
+msgstr "*** Non √® possibile creare $PAK_DIR"
 
 msgid "Transferring package to"
 msgstr ""
 
 msgid "There's no package storage directory, the package"
-msgstr "Non c'Ë nessuna cartella di immagazzinamento, il pacchetto "
+msgstr "Non c'√® nessuna cartella di immagazzinamento, il pacchetto "
 
 msgid "will be stored at the default location."
-msgstr "verr‡ immagazzinato nella locazione predefinita."
+msgstr "verr√† immagazzinato nella locazione predefinita."
 
 msgid "Erasing temporary files..."
 msgstr "Cancellazione file temporanei in corso..."
@@ -619,13 +608,13 @@ msgid "Building debug information package..."
 msgstr "Costruzione delle informazioni di debug del pacchetto in corso..."
 
 msgid " Done. The new package has been installed and saved to"
-msgstr " Fatto. Il nuovo pacchetto Ë stato installato e salvato in"
+msgstr " Fatto. Il nuovo pacchetto √® stato installato e salvato in"
 
 msgid " You can remove it from your system anytime using: "
 msgstr "Puoi rimuoverlo dal tuo sistema in ogni momento usando: "
 
 msgid " Done. The new package has been saved to"
-msgstr "Fatto. Il nuovo pacchetto Ë stato salvato in"
+msgstr "Fatto. Il nuovo pacchetto √® stato salvato in"
 
 msgid " You can install it in your system anytime using: "
 msgstr "Puoi installarlo in ogni momento usando: "

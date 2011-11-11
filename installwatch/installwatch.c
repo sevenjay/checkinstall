@@ -88,7 +88,7 @@ static int (*true_xmknod)(int ver,const char *, mode_t, dev_t *);
 static int (*true_open)(const char *, int, ...);
 static DIR *(*true_opendir)(const char *);
 static struct dirent *(*true_readdir)(DIR *dir);
-#if (GLIBC_MINOR <= 4)
+#if (__GLIBC_MINOR__ < 4) || (__GLIBC_MINOR__ == 4 && defined(__i386))
 static int (*true_readlink)(const char*,char *,size_t);
 #else
 static ssize_t (*true_readlink)(const char*,char *,size_t);
@@ -100,7 +100,11 @@ static int (*true_xstat)(int,const char *,struct stat *);
 static int (*true_lxstat)(int,const char *,struct stat *);
 static int (*true_scandir)(	const char *,struct dirent ***,
 				int (*)(const struct dirent *),
+#if __GLIBC__ == 2 && __GLIBC_MINOR__ < 10
 				int (*)(const void *,const void *));
+#else
+				int (*)(const struct dirent**,const struct dirent **));
+#endif
 static int (*true_symlink)(const char *, const char *);
 static int (*true_truncate)(const char *, TRUNCATE_T);
 static int (*true_unlink)(const char *);
@@ -111,7 +115,7 @@ static int (*true_setxattr)(const char *,const char *,const void *,
                             size_t, int);
 static int (*true_removexattr)(const char *,const char *);
 
-#if(GLIBC_MINOR >= 1)
+#if(__GLIBC_MINOR__ >= 1)
 
 static int (*true_creat64)(const char *, __mode_t);
 static FILE *(*true_fopen64)(const char *,const char *);
@@ -120,14 +124,18 @@ static int (*true_open64)(const char *, int, ...);
 static struct dirent64 *(*true_readdir64)(DIR *dir);
 static int (*true_scandir64)(	const char *,struct dirent64 ***,
 				int (*)(const struct dirent64 *),
+#if __GLIBC__ == 2 && __GLIBC_MINOR__ < 10
 				int (*)(const void *,const void *));
+#else
+				int (*)(const struct dirent64 **,const struct dirent64 **));
+#endif
 static int (*true_xstat64)(int,const char *, struct stat64 *);
 static int (*true_lxstat64)(int,const char *, struct stat64 *);
 static int (*true_truncate64)(const char *, __off64_t);
 
 #endif
 
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
 static int (*true_openat)(int, const char *, int, ...);
 static int (*true_fchmodat)(int, const char *, mode_t, int);
 static int (*true_fchownat)(int, const char *, uid_t, gid_t, int);
@@ -160,7 +168,7 @@ static inline int true_lstat(const char *pathname,struct stat *info) {
 	return true_lxstat(_STAT_VER,pathname,info);
 }
 
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
 static inline int true_fstatat(int dirfd, const char *pathname, struct stat *info, int flags) {
 	return true_fxstatat(_STAT_VER, dirfd, pathname, info, flags);
 }
@@ -267,7 +275,7 @@ int parse_suffix(char *,char *,const char *);
 
 #if DEBUG
 static int __instw_printdirent(struct dirent*);
-#if(GLIBC_MINOR >= 1)
+#if(__GLIBC_MINOR__ >= 1)
 static int __instw_printdirent64(struct dirent64*);
 #endif
 #endif
@@ -285,7 +293,7 @@ static int instw_delete(instw_t *);
 static int instw_setmetatransl(instw_t *);
 
 static int instw_setpath(instw_t *,const char *);
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
 static int instw_setpathrel(instw_t *, int, const char *);
 #endif
 static int instw_getstatus(instw_t *,int *);
@@ -374,7 +382,7 @@ static void initialize(void) {
 
 
 
-#if(GLIBC_MINOR >= 1)
+#if(__GLIBC_MINOR__ >= 1)
 	true_creat64     = dlsym(libc_handle, "creat64");
 	true_fopen64     = dlsym(libc_handle, "fopen64");
 	true_ftruncate64 = dlsym(libc_handle, "ftruncate64");
@@ -387,7 +395,7 @@ static void initialize(void) {
         true_removexattr = dlsym(libc_handle, "removexattr");
 #endif
 
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
 
 	true_openat      = dlsym(libc_handle, "openat");
 	true_fchmodat      = dlsym(libc_handle, "fchmodat");
@@ -1669,7 +1677,7 @@ static int instw_setpath(instw_t *instw,const char *path) {
  * returns   = /  0 ok. path set
  *               -1 failed. cf errno /
  */
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
 static int instw_setpathrel(instw_t *instw, int dirfd, const char *relpath) {
 
 /* This constant should be large enough to make a string that holds
@@ -2526,12 +2534,12 @@ int fchown(int fd, uid_t owner, gid_t group) {
 	return result;
 }
 
+#if !defined(__s390_glibc_bug_) && !defined(__powerpc_glibc_bug_) 
 FILE *fopen(const char *pathname, const char *mode) {
 	FILE *result;
 	instw_t instw;
 	int status=0;
 
-	REFCOUNT;
 
 	if (!libc_handle)
 		initialize();
@@ -2555,6 +2563,7 @@ FILE *fopen(const char *pathname, const char *mode) {
 #endif
 
 	if(mode[0]=='w'||mode[0]=='a'||mode[1]=='+') {
+		REFCOUNT;
 		backup(instw.truepath);
 		instw_apply(&instw);
 		logg("%" PRIdPTR "\tfopen\t%s\t#%s\n",(intptr_t)result,
@@ -2579,6 +2588,7 @@ FILE *fopen(const char *pathname, const char *mode) {
 
 	return result;
 }
+#endif
 
 int ftruncate(int fd, TRUNCATE_T length) {
 	int result;
@@ -2938,7 +2948,7 @@ struct dirent *readdir(DIR *dir) {
 	return result;
 }
 
-#if (GLIBC_MINOR <= 4)
+#if (__GLIBC_MINOR__ < 4) || (__GLIBC_MINOR__ == 4 && defined(__i386))
 int readlink(const char *path,char *buf,size_t bufsiz) {
 	int result;
 #else
@@ -3079,7 +3089,11 @@ int rmdir(const char *pathname) {
 
 int scandir(	const char *dir,struct dirent ***namelist,
 		int (*select)(const struct dirent *),
+#if __GLIBC__ == 2 && __GLIBC_MINOR__ < 10
 		int (*compar)(const void *,const void *)	) {
+#else
+		int (*compar)(const struct dirent **,const struct dirent **)	) {
+#endif
 	int result;
 
 	if (!libc_handle)
@@ -3494,7 +3508,7 @@ int removexattr (const char *pathname, const char *name)
         return result;
 }
 
-#if(GLIBC_MINOR >= 1)
+#if(__GLIBC_MINOR__ >= 1)
 
 int creat64(const char *pathname, __mode_t mode) {
 /* Is it a system call? */
@@ -3552,12 +3566,11 @@ int ftruncate64(int fd, __off64_t length) {
 	return result;
 }
 
+#if !defined(__s390_glibc_bug_) && !defined(__powerpc_glibc_bug_) 
 FILE *fopen64(const char *pathname, const char *mode) {
 	FILE *result;
 	instw_t instw;
 	int status;
-
-	REFCOUNT;
 
 	if (!libc_handle)
 		initialize();
@@ -3581,6 +3594,7 @@ FILE *fopen64(const char *pathname, const char *mode) {
 #endif
 
 	if(mode[0]=='w'||mode[0]=='a'||mode[1]=='+') {
+		REFCOUNT;
 		backup(instw.truepath);
 		instw_apply(&instw);
 	}
@@ -3603,6 +3617,7 @@ FILE *fopen64(const char *pathname, const char *mode) {
 
 	return result;
 }
+#endif
 
 int open64(const char *pathname, int flags, ...) {
 /* Eventually, there is a third parameter: it's mode_t mode */
@@ -3691,7 +3706,11 @@ struct dirent64 *readdir64(DIR *dir) {
 
 int scandir64(	const char *dir,struct dirent64 ***namelist,
 		int (*select)(const struct dirent64 *),
+#if __GLIBC__ == 2 && __GLIBC_MINOR__ < 10
 		int (*compar)(const void *,const void *)	) {
+#else
+		int (*compar)(const struct dirent64 **,const struct dirent64 **)	) {
+#endif
 	int result;
 
 	if (!libc_handle)
@@ -3834,7 +3853,7 @@ int truncate64(const char *path, __off64_t length) {
 	return result;
 }
 
-#endif /* GLIBC_MINOR >= 1 */
+#endif /* __GLIBC_MINOR__ >= 1 */
 
 
 /***********************************************
@@ -3854,7 +3873,7 @@ int truncate64(const char *path, __off64_t length) {
  * Thanks to Gilbert Ashley for his work on this!
  */
 
-#if (GLIBC_MINOR >= 4)
+#if (__GLIBC_MINOR__ >= 4)
  
 int openat (int dirfd, const char *path, int flags, ...) {
  	mode_t mode = 0;
@@ -4520,4 +4539,4 @@ int unlinkat (int dirfd, const char *path, int flags) {
 }
 
 
-#endif /* GLIBC_MINOR >= 4 */
+#endif /* __GLIBC_MINOR__ >= 4 */
