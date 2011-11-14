@@ -2455,7 +2455,7 @@ BUILDROOT=`egrep '^[Bb]uild[Rr]oot' < "$SPEC_PATH" | cut -f2 -d:| sed 's/^ *//g'
 
 [ $DEBUG -gt 0 ] && echo "debug: BUILDROOT=$BUILDROOT"
 
-! [ -d "$BUILDROOT" ] &&  ln -s "$BUILD_DIR" "$BUILDROOT"
+! [ -d "$BUILDROOT" ] &&  ln -s "$BUILD_DIR" "$BUILDROOT" && echo "BUILDROOT=$BUILDROOT -> BUILD_DIR=$BUILD_DIR"
 
 # We make sure that the architecture directory exists
 
@@ -2470,7 +2470,8 @@ cd "$DIRECTORIO_FUENTE"
 
 echo
 echogn "Building RPM package..."
-$RPMBUILD --buildroot ${BUILDROOT} -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" &> ${TMP_DIR}/rpmbuild.log
+$RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" --buildroot="$BUILD_DIR" &> ${TMP_DIR}/rpmbuild.log
+echo BUILD_DIR="$BUILD_DIR" SPEC_PATH="$SPEC_PATH"
 okfail
 
 if [ $? -gt 0 ]; then
