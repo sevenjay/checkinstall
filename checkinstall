@@ -1258,7 +1258,7 @@ if [ -f "$SPEC_PATH" ]; then
    NAME=`getparameter "^[Nn]ame"`
    VERSION=`getparameter "^[Vv]ersion"`
    RELEASE=`getparameter "^[Rr]elease"`
-   LICENSE=`getparameter "^[Cc]opyright"`
+   LICENSE=`getparameter "^[Ll]icense"`
    PKG_GROUP=`getparameter "^[Gg]roup"`
    PROVIDES=`getparameter "^[Pp]rovides"`
    REQUIRES=`getparameter "^[Rr]equires"`
