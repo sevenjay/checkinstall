@@ -132,6 +132,7 @@ function usage() {
    echog "-t,--type=<slackware|rpm|debian> Choose packaging system"
    echog "-S                               Build a Slackware package"
    echog "-R                               Build a RPM package"
+   echog "--spec-make-src                  With -R, Build a RPM package by source. Don't need make, make install"
    echog "-D                               Build a Debian package"
    echo
    echog "*Install options*"
@@ -323,8 +324,8 @@ function cleanup {
     echogn "(Debugging mode on, KEEPING temp dir $TMP_DIR)..."
  fi
  [ -n "${RPMSOURCEDIR}" ] &&
-   [ -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tgz" ] &&
-   rm -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tgz"
+   [ -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tar.gz" ] &&
+   rm -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tar.gz"
 
  # If we had a pre-existing postinstall-pak, we keep it as it was.
  if [ -f "${DIRECTORIO_FUENTE}/postinstall-pak.tmp" ]; then
@@ -508,7 +509,7 @@ fi
 # Arguments parsing
 
 CKNAME=$(basename "$0")
-PARAMS=$(getopt -a -n $CKNAME -o +d:DA:t:RShHy -l arch:,type:,si,showinstall::,ss,showslack::,deldoc::,delspec::,deldesc::,strip::,addso::,install::,stripso::,gzman::,bk,backup::,autodoinst::,reset-uids::,fstrans::,spec:,exclude:,include:,pkgname:,pkgversion:,pkgrelease:,pkglicense:,pkggroup:,pkgsource:,pkgaltsource:,pakdir:,docdir:,requires:,provides:,conflicts:,replaces:,maintainer:,dpkgflags:,rpmflags:,pkgarch:,umask:,with-tar:,inspect,review-spec,review-control,newslack,help,nodoc,rpmi,rpmu,version,copyright,default -- "$@")
+PARAMS=$(getopt -a -n $CKNAME -o +d:DA:t:RShHy -l arch:,type:,si,showinstall::,ss,showslack::,deldoc::,delspec::,deldesc::,strip::,addso::,install::,stripso::,gzman::,bk,backup::,autodoinst::,reset-uids::,fstrans::,spec:,exclude:,include:,pkgname:,pkgversion:,pkgrelease:,pkglicense:,pkggroup:,pkgsource:,pkgaltsource:,pakdir:,docdir:,requires:,provides:,conflicts:,replaces:,maintainer:,dpkgflags:,rpmflags:,pkgarch:,umask:,with-tar:,inspect,review-spec,review-control,newslack,help,nodoc,rpmi,rpmu,version,copyright,default,spec-make-src -- "$@")
 
 [ $? -gt 0 ] && help_notice
 
@@ -628,6 +629,9 @@ while [ "$1" != "--" ]; do
        -R)
           INSTYPE=R
           CK_REDHAT=1
+          ;;
+       --spec-make-src)
+          SPEC_MAKE=1
           ;;
        -S)
           INSTYPE=S
@@ -1000,9 +1004,12 @@ shift
 [ -d doc-pak ] && DEL_DOCPAK=0
 
 
-
-INSTALLCMD=("$@")
-[ -z "${INSTALLCMD[*]}" ] && INSTALLCMD=(make install)
+if [ "$SPEC_MAKE" ]; then
+    echogn "Using .spec to make source and build packages\n"
+else
+    INSTALLCMD=("$@")
+    [ -z "${INSTALLCMD[*]}" ] && INSTALLCMD=(make install)
+fi
 
 # The editor we use to review the file list and .spec or control file
 if ! [ -x "$VISUAL" ]; then
@@ -2464,15 +2471,26 @@ BUILDROOT=$(egrep '^[Bb]uild[Rr]oot' < "$SPEC_PATH" | cut -f2 -d:| sed 's/^ *//g
 ! [ -d "${RPMSOURCEDIR}/RPMS/${ARCHITECTURE}" ] && mkdir -p "${RPMSOURCEDIR}/RPMS/${ARCHITECTURE}"
 
 
-mkdir "${TMP_DIR}/$PKG_BASENAME"
+
 cd $TMP_DIR
-$TAR -cz -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tgz" "$PKG_BASENAME"
-rm -rf "${TMP_DIR}/$PKG_BASENAME"
+echogn "cd $TMP_DIR\n"
+if [ "$SPEC_MAKE" ]; then
+    ln -s "$DIRECTORIO_FUENTE" "$PKG_BASENAME"
+    echogn "ln -s $DIRECTORIO_FUENTE $PKG_BASENAME\n"
+else
+    mkdir "empty"
+    ln -s "empty" "$PKG_BASENAME"
+fi
+#ls "$PKG_BASENAME"
+$TAR -czh -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tar.gz" "${PKG_BASENAME}/"
+echogn "$TAR -cz -f ${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tar.gz ${PKG_BASENAME}/\n"
+#rm -rf "${TMP_DIR}/$PKG_BASENAME"
 cd "$DIRECTORIO_FUENTE"
+echogn "cd $DIRECTORIO_FUENTE\n"
 
 echo
-echogn "Building RPM package..."
-echo BUILD_DIR="$BUILD_DIR" SPEC_PATH="$SPEC_PATH\n"
+echogn "Building RPM package...\n"
+echogn "$RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} $SPEC_PATH --buildroot=$BUILD_DIR &> ${TMP_DIR}/rpmbuild.log\n"
 $RPMBUILD -bb ${RPM_TARGET_FLAG}${ARCHITECTURE} "$SPEC_PATH" --buildroot="$BUILD_DIR" &> ${TMP_DIR}/rpmbuild.log
 okfail
 
@@ -2765,7 +2783,7 @@ fi
 [ $DEBUG -lt 2 ] && rm -rf ${BUILD_DIR}
 rm -f checkinstall-debug*
 rm -f "$BUILDROOT"
-rm -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tgz"
+rm -f "${RPMSOURCEDIR}/SOURCES/${PKG_BASENAME}.tar.gz"
 okfail
 
 # Delete doc-pak directory
