@@ -1,6 +1,6 @@
 ##############################################################################
-#                       #     checkinstall 1.6.2    #                        #
-#                       #############################                        #
+#                  #     checkinstall 1.6.3.2 patched    #                   #
+#                  #######################################                   #
 #                                                                            #
 #  Installs a compiled program from the program's source directory using     #
 #  "make install" or any other command supplied on checkinstall's command    #
@@ -11,6 +11,16 @@
 #  This version of checkinstall needs enough free space on the partition     #
 #  holding the temp dir (/var/tmp by default) to write there a               #
 #  temporary copy of the package.                                            #
+#                                                                            #
+#                                                                            #
+#  This is a patched version:                                                #
+#  Base on http://checkinstall.izto.org/checkinstall.git 2011/03/10 39be972d #
+#                                                                            #
+#  Patched from                                                              #
+#  1. http://rpmfind.net/linux/RPM/opensuse/11.4/x86_64/checkinstall-1.6.2-8.1.x86_64.html
+#  2. Andor Goetzendorff 2011/09/17 e48e26ac on github                       #
+#  3. sevenjay on github                                                     #
+#                                                                            #
 #                                                                            #
 ##############################################################################
 
