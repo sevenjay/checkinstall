@@ -1546,7 +1546,7 @@ chmod 700 $TMP_SCRIPT
 
 
 echo
-echogn "Installing with %s..." "${INSTALLCMD[@]}"
+echogn "Installing with %s..." "${INSTALLCMD[*]}"
 
 
 #
