@@ -1,0 +1,4 @@
+*.o
+*.so
+*.mo
+installwatch/localdecls.h
