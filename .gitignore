@@ -2,3 +2,6 @@
 *.so
 *.mo
 installwatch/localdecls.h
+checkinstall
+checkinstallrc-dist
+doc-pak
