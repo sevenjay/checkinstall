@@ -2536,7 +2536,7 @@ int fchown(int fd, uid_t owner, gid_t group) {
 
 #if !defined(__s390_glibc_bug_) && !defined(__powerpc_glibc_bug_) 
 FILE *fopen(const char *pathname, const char *mode) {
-	FILE *result;
+	FILE *result=NULL;
 	instw_t instw;
 	int status=0;
 
