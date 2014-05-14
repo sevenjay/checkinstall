@@ -408,6 +408,17 @@ function getparameter () {
 
 }
 
+# reads version parameter, including epoch tags
+function getversionparameter () {
+	EPOCH=$(getparameter "^[Ee]poch")
+	VERS=$(getparameter "^[Vv]ersion")
+	if [ -n "$EPOCH" ]; then
+		echo "${EPOCH}:${VERS}"
+	else
+		echo "${VERS}"
+	fi
+}
+
 # This function is used to properly escape shell commands, so
 # we don't interpret the install command twice. This is useful
 # for making commands like 'make CC="gcc -some -options" install'
@@ -1265,7 +1276,7 @@ fi
 if [ -f "$SPEC_PATH" ]; then 
    SUMMARY=$(getparameter "^[Ss]ummary")
    NAME=$(getparameter "^[Nn]ame")
-   VERSION=$(getparameter "^[Vv]ersion")
+   VERSION=$(getversionparameter)
    RELEASE=$(getparameter "^[Rr]elease")
    LICENSE=$(getparameter "^[Ll]icense")
    PKG_GROUP=$(getparameter "^[Gg]roup")
@@ -2279,6 +2290,10 @@ r|R)
 
 FAILED=0
 
+VERSION_NO_EPOCH=$(echo ${VERSION} | sed -e 's/^[0123456789]*://')
+
+PKG_BASENAME="${NAME}-${VERSION_NO_EPOCH}"
+
 # Verify that we have the rpm command in our path
 
 RPM_PATH=$(which rpm 2> /dev/null)
@@ -2384,10 +2399,19 @@ fi
 
 # Here comes the .spec file:
 
+if [[ $VERSION =~ ^[0123456789]*:.* ]]; then
+	SPEC_EPOCH_STRING="Epoch: $(echo ${VERSION} | cut -d ':' -f 1)"
+	SPEC_VERSION_STRING="Version: $(echo ${VERSION} | cut -d ':' -f 2)"
+else
+	SPEC_EPOCH_STRING=""
+	SPEC_VERSION_STRING="Version: $VERSION"
+fi
+
    cat > "$SPEC_PATH" << EOF
 Summary:   $SUMMARY
 Name:      $NAME
-Version:   $VERSION
+$SPEC_EPOCH_STRING
+$SPEC_VERSION_STRING
 Release:   $RELEASE
 License: $LICENSE
 Packager:  checkinstall-$CHECKINSTALL_VERSION
