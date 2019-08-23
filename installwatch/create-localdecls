@@ -43,30 +43,32 @@ fi
 ###
 ###
 
-echo -n 'Checking libc version... '
-gcc -Wall -o libctest libctest.c
-VERSION=`ldd libctest | grep libc\\.so | awk '{print $1}'`
-rm libctest
-echo $VERSION
-echo "#define LIBC_VERSION \"$VERSION\"" >> $OUTFILE
-if test "$VERSION" = 'libc.so.5' ; then
+echo -n 'Checking which libc we are using... '
+gcc -Wall -o libcfiletest libcfiletest.c
+LIBC_FILE=`ldd libcfiletest | grep libc\\.so | awk '{print $1}'`
+echo $LIBC_FILE
+echo "#define LIBC_FILE \"$LIBC_FILE\"" >> $OUTFILE
+if test "$LIBC_FILE" = 'libc.so.5' ; then
 	echo '#define BROKEN_RTLD_NEXT' >> $OUTFILE
 	echo '#define LIBC 5' >> $OUTFILE
-fi
+else
+	if test "$LIBC_FILE" = 'libc.so.6' ; then
+		echo -n 'Checking libc version... '
+		gcc -Wall -o libctest libctest.c
+		LIBC_VERSION=`./libctest`
+		echo $LIBC_VERSION
+		echo "#define LIBC_VERSION \"$LIBC_VERSION\"" >> $OUTFILE
+		echo -en 'glibc >= 2 found\nChecking glibc subversion... '
+		OsLibcMajor=`echo $LIBC_VERSION | cut -f1 -d.`
+		OsLibcMinor=`echo $LIBC_VERSION | cut -f2 -d.`
+		echo "#define GLIBC_MAJOR $OsLibcMajor" >> $OUTFILE
+		echo "#define GLIBC_MINOR $OsLibcMinor" >> $OUTFILE
+		echo $OsLibcMinor
+	else
+		echo "Unknown libc found ($LIBC_FILE). Please update the create-localdecls script."
+		exit 1
+	fi
 
-if test "$VERSION" = 'libc.so.6' ; then
-	echo -n 'Checking glibc subversion... '
-	tmp="`ldd /bin/sh | grep libc.so 2> /dev/null`"
-	LibcPath=`expr "$tmp" : '[^/]*\(/[^ ]*\)'`
-	tmp="`strings $LibcPath | grep -i 'c library'`"
-	OsLibcMajor=`expr "$tmp" : '.* \([0-9][0-9]*\)'`
-	OsLibcMinor=`expr "$tmp" : '.* [0-9][0-9]*\.\([0-9][0-9]*\)'`
-	case "$OsLibcMajor" in
-	2)
-		# 2 is the glibc version
-		echo '#define GLIBC_MINOR __GLIBC_MINOR__' >> $OUTFILE
-		SUBVERSION="glibc-2.$OsLibcMajor" ;;
-	esac
 fi
 
 echo >> $OUTFILE

@@ -20,6 +20,7 @@ all:
 			;; \
 		esac ; \
 	done	
+	sed 's%MAKEFILE_PREFIX%$(PREFIX)%g' checkinstall.in > checkinstall
 	$(MAKE) -C installwatch
 	
 install: all checkinstall checkinstallrc-dist
@@ -27,18 +28,19 @@ install: all checkinstall checkinstallrc-dist
 	$(MAKE) -C installwatch install
 	
 	mkdir -p $(DESTDIR)$(BINDIR)
-	install checkinstall makepak $(DESTDIR)$(BINDIR)
+	mkdir -p $(LCDIR)
+	install -m 0755 -o root -g root checkinstall makepak $(DESTDIR)$(BINDIR)
 	for file in locale/*.mo ; do \
-		LANG=`echo $$file | sed -e 's|locale/checkinstall-||' \
+		CKLNG=`echo $$file | sed -e 's|locale/checkinstall-||' \
 			-e 's|\.mo||'` && \
-		mkdir -p $(DESTDIR)$(LCDIR)/$${LANG}/LC_MESSAGES && \
-		install $$file $(DESTDIR)$(LCDIR)/$${LANG}/LC_MESSAGES/checkinstall.mo || \
+		mkdir -p $(DESTDIR)$(LCDIR)/$${CKLNG}/LC_MESSAGES && \
+		install $$file $(DESTDIR)$(LCDIR)/$${CKLNG}/LC_MESSAGES/checkinstall.mo || \
 		exit 1 ; \
 	done
 	
 	mkdir -p $(DESTDIR)$(CONFDIR)
 	install -m644  checkinstallrc-dist $(DESTDIR)$(CONFDIR)
-	if ! [ -f $(DESTDIR)$(CONFDIR)/checkinstallrc ]; then \
+	@if ! [ -f $(DESTDIR)$(CONFDIR)/checkinstallrc ]; then \
 		install $(DESTDIR)$(CONFDIR)/checkinstallrc-dist $(DESTDIR)$(CONFDIR)/checkinstallrc; \
 	else \
 		echo; \
@@ -62,7 +64,7 @@ checkinstallrc-dist: checkinstallrc-dist.in
 	sed -e 's%@PREFIX@%$(PREFIX)%g' $< >$@
 
 clean:
-	for file in locale/checkinstall-*.mo ; do \
+	for file in locale/checkinstall-*.mo checkinstall ; do \
 		rm -f $${file} ; \
 	done
 	rm -f checkinstall checkinstallrc-dist

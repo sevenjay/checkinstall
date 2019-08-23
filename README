@@ -1,5 +1,5 @@
 ##############################################################################
-#                  #     checkinstall 1.6.3.2 patched    #                   #
+#                  #     checkinstall 1.6.3-3 patched    #                   #
 #                  #######################################                   #
 #                                                                            #
 #  Installs a compiled program from the program's source directory using     #
@@ -13,14 +13,16 @@
 #  temporary copy of the package.                                            #
 #                                                                            #
 #                                                                            #
-#  This is a patched version:                                                #
-#  Base on http://checkinstall.izto.org/checkinstall.git 2011/03/10 39be972d #
+#  This is a patched version, base on:                                       #
+#  http://checkinstall.izto.org/checkinstall.git 2011/03/10 39be972d         #
 #                                                                            #
 #  Patched from                                                              #
 #  1. http://rpmfind.net/linux/RPM/opensuse/11.4/x86_64/checkinstall-1.6.2-8.1.x86_64.html
 #  2. Andor Goetzendorff 2011/09/17 e48e26ac on github                       #
 #  3. sevenjay on github                                                     #
 #                                                                            #
+#  Merged from                                                               # 
+#  http://checkinstall.izto.org/checkinstall.git 04/27/2017 d24a6305         #
 #                                                                            #
 ##############################################################################
 
